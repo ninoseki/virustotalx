@@ -3,8 +3,9 @@
 module VirusTotal
   module Client
     class URL < Base
-      def report(resource)
-        post("/url/report", resource: resource) { |json| json }
+      def report(resource, allinfo: nil)
+        params = { resource: resource, allinfo: allinfo }.compact
+        post("/url/report", params) { |json| json }
       end
 
       def scan(url)

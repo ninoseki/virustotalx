@@ -7,7 +7,6 @@ require "uri"
 module VirusTotal
   module Client
     class Base
-      # The path to the REST API endpoint.
       HOST = "www.virustotal.com"
       VERSION = "v2"
       BASE_URL = "https://#{HOST}/vtapi/#{VERSION}"
@@ -52,8 +51,16 @@ module VirusTotal
           response = http.request(req)
 
           case response.code
-          when "200" then yield JSON.parse(response.body)
-          when "204" then raise(RateLimitError, response.body)
+          when "200"
+            if response["Content-Type"] == "application/json"
+              yield JSON.parse(response.body)
+            else
+              yield response.body
+            end
+          when "204"
+            raise(RateLimitError, response.body)
+          when "302"
+            yield response["Location"]
           else
             raise(Error, "unsupported response code returned: #{response.code}")
           end

@@ -27,18 +27,18 @@ http_interactions:
       Content-Type:
       - application/json
       X-Cloud-Trace-Context:
-      - a7d9599c6747631f747fe6268ecc49be
+      - 05a0d852b86d9ac5ccf435dd09d07001
       Date:
-      - Thu, 02 May 2019 00:28:10 GMT
+      - Thu, 02 May 2019 11:00:00 GMT
       Server:
       - Google Frontend
       Content-Length:
       - '4719'
     body:
       encoding: UTF-8
-      string: '{"scan_id": "793a92a45980286190d8c4cb5e3a4d7846373fecde23e4d95f22bfdc98eec94c-1556755115",
+      string: '{"scan_id": "793a92a45980286190d8c4cb5e3a4d7846373fecde23e4d95f22bfdc98eec94c-1556780942",
         "resource": "http://github.com", "url": "http://github.com/", "response_code":
-        1, "scan_date": "2019-05-01 23:58:35", "permalink": "https://www.virustotal.com/url/793a92a45980286190d8c4cb5e3a4d7846373fecde23e4d95f22bfdc98eec94c/analysis/1556755115/",
+        1, "scan_date": "2019-05-02 07:09:02", "permalink": "https://www.virustotal.com/url/793a92a45980286190d8c4cb5e3a4d7846373fecde23e4d95f22bfdc98eec94c/analysis/1556780942/",
         "verbose_msg": "Scan finished, scan information embedded in this object",
         "filescan_id": null, "positives": 0, "total": 66, "scans": {"CLEAN MX": {"detected":
         false, "result": "clean site"}, "DNS8": {"detected": false, "result": "clean
@@ -94,5 +94,5 @@ http_interactions:
         {"detected": false, "result": "clean site"}, "securolytics": {"detected":
         false, "result": "clean site"}}}'
     http_version: 
-  recorded_at: Thu, 02 May 2019 00:27:46 GMT
+  recorded_at: Thu, 02 May 2019 10:59:36 GMT
 recorded_with: VCR 4.0.0

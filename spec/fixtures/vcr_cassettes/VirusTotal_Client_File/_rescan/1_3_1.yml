@@ -5,7 +5,7 @@ http_interactions:
     uri: https://www.virustotal.com/vtapi/v2/file/rescan
     body:
       encoding: US-ASCII
-      string: resource=7657fcb7d772448a6d8504e4b20168b8&apikey=<VIRUSTOTAL_API_KEY>
+      string: resource=726a2eedb9df3d63ec1b4a7d774a799901f1a2b9&apikey=<VIRUSTOTAL_API_KEY>
     headers:
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
@@ -27,18 +27,18 @@ http_interactions:
       Content-Type:
       - application/json
       X-Cloud-Trace-Context:
-      - 5a36d317530e8bf71f5303e9e15e929c
+      - cd94f4f41fc39312baf84ea2c94f550e
       Date:
-      - Thu, 02 May 2019 00:20:25 GMT
+      - Thu, 02 May 2019 11:07:05 GMT
       Server:
       - Google Frontend
       Content-Length:
-      - '370'
+      - '378'
     body:
       encoding: UTF-8
-      string: '{"permalink": "https://www.virustotal.com/file/54bc950d46a0d1aa72048a17c8275743209e6c17bdacfc4cb9601c9ce3ec9a71/analysis/1556756425/",
-        "response_code": 1, "sha256": "54bc950d46a0d1aa72048a17c8275743209e6c17bdacfc4cb9601c9ce3ec9a71",
-        "resource": "7657fcb7d772448a6d8504e4b20168b8", "scan_id": "54bc950d46a0d1aa72048a17c8275743209e6c17bdacfc4cb9601c9ce3ec9a71-1556756425"}'
+      string: '{"permalink": "https://www.virustotal.com/file/b35ef2d8a3ee0d29eecb83acf45c1f192ceca75ab10dec861166af2b7bda373b/analysis/1556795198/",
+        "response_code": 1, "sha256": "b35ef2d8a3ee0d29eecb83acf45c1f192ceca75ab10dec861166af2b7bda373b",
+        "resource": "726a2eedb9df3d63ec1b4a7d774a799901f1a2b9", "scan_id": "b35ef2d8a3ee0d29eecb83acf45c1f192ceca75ab10dec861166af2b7bda373b-1556795198"}'
     http_version: 
-  recorded_at: Thu, 02 May 2019 00:20:01 GMT
+  recorded_at: Thu, 02 May 2019 11:06:41 GMT
 recorded_with: VCR 4.0.0

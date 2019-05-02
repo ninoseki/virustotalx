@@ -10,7 +10,7 @@ module VirusTotal
     attr_reader :url
 
     def initialize(key: ENV["VIRUSTOTAL_API_KEY"])
-      raise ArgumentError, "No API key has been found or provided! (setup your VIRUSTOTAL_API_KEY environment varialbe)" if key.nil?
+      raise ArgumentError, "No API key has been found or provided! (setup your VIRUSTOTAL_API_KEY environment varialbe)" unless key
 
       @domain = Client::Domain.new(key: key)
       @file = Client::File.new(key: key)
