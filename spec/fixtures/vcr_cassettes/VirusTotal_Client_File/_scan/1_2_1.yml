@@ -1,0 +1,47 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://www.virustotal.com/vtapi/v2/file/scan
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - www.virustotal.com
+      Content-Type:
+      - multipart/form-data
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json
+      X-Cloud-Trace-Context:
+      - 9553016eedb3bb70e9301e234450e7fb
+      Date:
+      - Thu, 02 May 2019 11:07:03 GMT
+      Server:
+      - Google Frontend
+      Content-Length:
+      - '580'
+    body:
+      encoding: UTF-8
+      string: '{"scan_id": "350ee5d870dbeeb52f6ce1debacf73aa7d89b5ec892085eef2a5d00c775185a6-1556795223",
+        "sha1": "361dd1708fcb1d4e6af0fd4b1d39c4613b0573f7", "resource": "350ee5d870dbeeb52f6ce1debacf73aa7d89b5ec892085eef2a5d00c775185a6",
+        "response_code": 1, "sha256": "350ee5d870dbeeb52f6ce1debacf73aa7d89b5ec892085eef2a5d00c775185a6",
+        "permalink": "https://www.virustotal.com/file/350ee5d870dbeeb52f6ce1debacf73aa7d89b5ec892085eef2a5d00c775185a6/analysis/1556795223/",
+        "md5": "ba4e34dd4bde67b221362d54c4baf070", "verbose_msg": "Scan request successfully
+        queued, come back later for the report"}'
+    http_version: 
+  recorded_at: Thu, 02 May 2019 11:06:39 GMT
+recorded_with: VCR 4.0.0

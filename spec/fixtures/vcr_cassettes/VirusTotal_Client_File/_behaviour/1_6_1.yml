@@ -1,0 +1,41 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.virustotal.com/vtapi/v2/file/behaviour?apikey=<VIRUSTOTAL_API_KEY>&hash=726a2eedb9df3d63ec1b4a7d774a799901f1a2b9
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - www.virustotal.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json
+      X-Cloud-Trace-Context:
+      - ae37054fb2f3aaec748734ee97160f60
+      Date:
+      - Thu, 02 May 2019 11:07:07 GMT
+      Server:
+      - Google Frontend
+      Content-Length:
+      - '126'
+    body:
+      encoding: UTF-8
+      string: '{"response_code": 0, "hash": "726a2eedb9df3d63ec1b4a7d774a799901f1a2b9",
+        "verbose_msg": "No behavioural report for this file"}'
+    http_version: 
+  recorded_at: Thu, 02 May 2019 11:06:43 GMT
+recorded_with: VCR 4.0.0
