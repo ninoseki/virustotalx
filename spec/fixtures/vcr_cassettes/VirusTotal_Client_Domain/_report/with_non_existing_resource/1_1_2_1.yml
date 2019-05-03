@@ -1,0 +1,40 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.virustotal.com/vtapi/v2/domain/report?apikey=<VIRUSTOTAL_API_KEY>&domain=a_domain_which_does_not_exist.co.jp
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - www.virustotal.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json
+      X-Cloud-Trace-Context:
+      - 6a2070f0a9fee8a28c37aa7f7daf5221
+      Date:
+      - Fri, 03 May 2019 08:20:00 GMT
+      Server:
+      - Google Frontend
+      Content-Length:
+      - '55'
+    body:
+      encoding: UTF-8
+      string: '{"response_code": 0, "verbose_msg": "Domain not found"}'
+    http_version: 
+  recorded_at: Fri, 03 May 2019 08:19:35 GMT
+recorded_with: VCR 4.0.0

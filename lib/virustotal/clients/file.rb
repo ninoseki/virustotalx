@@ -5,7 +5,9 @@ module VirusTotal
     class File < Base
       def report(resource, allinfo: nil)
         params = { resource: resource, allinfo: allinfo }.compact
-        post("/file/report", params) { |json| json }
+        post("/file/report", params) do |json|
+          handle_response_code json
+        end
       end
 
       def scan(path)
