@@ -93,6 +93,11 @@ module VirusTotal
 
         request(post, &block)
       end
+
+      def handle_response_code(json)
+        response_code = json.dig("response_code").to_i
+        response_code.zero? ? nil : json
+      end
     end
   end
 end

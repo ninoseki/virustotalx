@@ -58,7 +58,7 @@ RSpec.describe VirusTotal::Client::File, :vcr do
   end
 
   describe "#clusters" do
-    let(:date) { DateTime.now.strftime("%Y-%m%-dT") }
+    let(:date) { "2019-052T" }
 
     it do
       res = api.file.clusters(date)

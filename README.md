@@ -41,6 +41,10 @@ api.url.scan("https://github.com/ninoseki/virustotalx")
 api.domain.report("github.com")
 
 api.ip_address.report("1.1.1.1")
+
+# it returns nil when given a non-existing resource to #report methods
+api.domain.report("a_domain_which_does_not_exist.com")
+# => nil
 ```
 
 See `/spec/clients` for more.
