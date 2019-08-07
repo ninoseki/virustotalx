@@ -19,7 +19,7 @@ require "virustotalx"
 # or
 require "virustotal"
 
-# when given nothing, it tries to load your API key from ENV["VIRUSTOTASL_API_KEY"]
+# when given nothing, it tries to load your API key from ENV["VIRUSTOAL_API_KEY"]
 api = VirusTotal::API.new
 # or you can set it manually
 api = VirusTotal::API.new(key: "YOUR_API_KEY")
