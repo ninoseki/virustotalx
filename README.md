@@ -3,6 +3,7 @@
 [![Gem Version](https://badge.fury.io/rb/virustotalx.svg)](https://badge.fury.io/rb/virustotalx)
 [![Build Status](https://travis-ci.org/ninoseki/virustotalx.svg?branch=master)](https://travis-ci.org/ninoseki/virustotalx)
 [![Coverage Status](https://coveralls.io/repos/github/ninoseki/virustotalx/badge.svg?branch=master)](https://coveralls.io/github/ninoseki/virustotalx?branch=master)
+[![CodeFactor](https://www.codefactor.io/repository/github/ninoseki/virustotalx/badge)](https://www.codefactor.io/repository/github/ninoseki/virustotalx)
 
 Yet another VirusTotal API wrapper for Ruby
 
