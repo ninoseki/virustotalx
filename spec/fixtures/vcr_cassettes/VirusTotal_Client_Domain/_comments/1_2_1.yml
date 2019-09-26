@@ -1,0 +1,79 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.virustotal.com/api/v3/domains/github.com/comments
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-Apikey:
+      - "<VIRUSTOTAL_API_KEY>"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Cloud-Trace-Context:
+      - 47dce57f1b4cbc971bfbf184828b3d45
+      Date:
+      - Thu, 26 Sep 2019 07:07:58 GMT
+      Server:
+      - Google Frontend
+      Content-Length:
+      - '1381'
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+            "data": [
+                {
+                    "attributes": {
+                        "date": 1555029615,
+                        "html": "Its GitHub everybody!! Yay! It&#39;s raining Octocats for everyone!",
+                        "tags": [],
+                        "text": "Its GitHub everybody!! Yay! It's raining Octocats for everyone!",
+                        "votes": {
+                            "abuse": 0,
+                            "negative": 0,
+                            "positive": 0
+                        }
+                    },
+                    "id": "d-github.com-990aaacd",
+                    "links": {
+                        "self": "https://www.virustotal.com/api/v3/comments/d-github.com-990aaacd"
+                    },
+                    "type": "comment"
+                },
+                {
+                    "attributes": {
+                        "date": 1553751290,
+                        "html": "#safe",
+                        "tags": [
+                            "safe"
+                        ],
+                        "text": "#safe",
+                        "votes": {
+                            "abuse": 0,
+                            "negative": 0,
+                            "positive": 0
+                        }
+                    },
+                    "id": "d-github.com-c52bf5bf",
+                    "links": {
+                        "self": "https://www.virustotal.com/api/v3/comments/d-github.com-c52bf5bf"
+                    },
+                    "type": "comment"
+                }
+            ],
+            "links": {
+                "self": "https://www.virustotal.com/api/v3/domains/github.com/comments?limit=10"
+            }
+        }
+    http_version: 
+  recorded_at: Thu, 26 Sep 2019 07:07:58 GMT
+recorded_with: VCR 4.0.0

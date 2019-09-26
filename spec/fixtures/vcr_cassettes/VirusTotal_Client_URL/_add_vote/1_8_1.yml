@@ -1,0 +1,48 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://www.virustotal.com/api/v3/urls/aHR0cDovL2V4YW1wbGUuY29tLw/votes
+    body:
+      encoding: UTF-8
+      string: '{"data":{"type":"vote","attributes":{"verdict":"harmless"}}}'
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - www.virustotal.com
+      X-Apikey:
+      - "<VIRUSTOTAL_API_KEY>"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Cloud-Trace-Context:
+      - 7234388fecf4b71a88b62fbe085d689f
+      Date:
+      - Thu, 26 Sep 2019 10:53:38 GMT
+      Server:
+      - Google Frontend
+      Content-Length:
+      - '137'
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+            "error": {
+                "code": "NotFoundError",
+                "message": "Item \"aHR0cDovL2V4YW1wbGUuY29tLw\" type \"URL\" not found"
+            }
+        }
+    http_version: 
+  recorded_at: Thu, 26 Sep 2019 10:53:38 GMT
+recorded_with: VCR 4.0.0

@@ -8,8 +8,8 @@ module VirusTotal
   module Client
     class Base
       HOST = "www.virustotal.com"
-      VERSION = "v2"
-      BASE_URL = "https://#{HOST}/vtapi/#{VERSION}"
+      VERSION = "v3"
+      BASE_URL = "https://#{HOST}/api/#{VERSION}"
 
       attr_reader :key
 
@@ -22,10 +22,6 @@ module VirusTotal
 
       def key?
         !key.nil?
-      end
-
-      def default_params
-        { apikey: key }
       end
 
       def url_for(path)
@@ -46,57 +42,74 @@ module VirusTotal
         end
       end
 
+      def raise_error(code, message)
+        code = code.to_s.to_sym
+
+        table = {
+          "400": BadRequestError,
+          "401": AuthenticationRequiredError,
+          "403": ForbiddenError,
+          "404": NotFoundError,
+          "409": AlreadyExistsError,
+          "429": QuotaExceededError,
+          "503": TransientError,
+        }
+        raise Error, "Unsupported response code returned: #{code} - #{message}" unless table.key?(code)
+
+        klass = table[code]
+        raise klass, message
+      end
+
       def request(req)
         Net::HTTP.start(HOST, 443, https_options) do |http|
+          req["x-apikey"] = key
+
           response = http.request(req)
 
-          case response.code
-          when "200"
-            if response["Content-Type"] == "application/json"
-              yield JSON.parse(response.body)
+          code = response.code.to_i
+          body = response.body
+          json = JSON.parse(body) if response["Content-Type"].to_s.include?("application/json")
+          message = json ? json.dig("message") : body
+
+          case code
+          when 200
+            if json
+              yield json
             else
-              yield response.body
+              yield body
             end
-          when "204"
-            raise(RateLimitError, response.body)
-          when "302"
+          when 302
             yield response["Location"]
           else
-            raise(Error, "unsupported response code returned: #{response.code}")
+            raise_error code, message
           end
         end
       end
 
-      def get(path, params = {}, &block)
+      def _get(path, params = {}, &block)
         uri = url_for(path)
-        uri.query = URI.encode_www_form(params.merge(default_params))
+        uri.query = URI.encode_www_form(params)
         get = Net::HTTP::Get.new(uri)
 
         request(get, &block)
       end
 
-      def post(path, params = {}, &block)
+      def _post(path, params = {}, &block)
         post = Net::HTTP::Post.new(url_for(path))
-        post.set_form_data params.merge(default_params)
+        post.body = JSON.generate(params)
 
         request(post, &block)
       end
 
-      def post_with_file(path, file:, filename:, &block)
+      def _post_with_file(path, file:, filename:, &block)
         post = Net::HTTP::Post.new(url_for(path))
 
         data = [
           ["file", file, { "filename": filename }],
-          ["apikey", key]
         ]
         post.set_form(data, "multipart/form-data")
 
         request(post, &block)
-      end
-
-      def handle_response_code(json)
-        response_code = json.dig("response_code").to_i
-        response_code.zero? ? nil : json
       end
     end
   end

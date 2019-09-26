@@ -1,18 +1,34 @@
 # frozen_string_literal: true
 
 RSpec.describe VirusTotal::Client::URL, :vcr do
-  let(:api ) { VirusTotal::API.new }
+  let(:id) { "http://example.com/" }
 
-  describe "#report" do
+  include_examples "object example"
+
+  describe "#analyse" do
     it do
-      res = api.url.report("http://github.com")
+      res = subject.analyse(id)
       expect(res).to be_a(Hash)
     end
   end
 
-  describe "#scan" do
+  describe "#votes" do
     it do
-      res = api.url.scan("https://github.com/ninoseki/virustotalx")
+      res = subject.votes(id)
+      expect(res).to be_a(Hash)
+    end
+  end
+
+  describe "#network_location" do
+    it do
+      res = subject.network_location(id)
+      expect(res).to be_a(Hash)
+    end
+  end
+
+  describe "#network_location" do
+    it do
+      res = subject.network_location(id)
       expect(res).to be_a(Hash)
     end
   end

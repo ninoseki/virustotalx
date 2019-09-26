@@ -2,11 +2,19 @@
 
 module VirusTotal
   module Client
-    class IPAddress < Base
-      def report(ip)
-        get("/ip-address/report", ip: ip) do |json|
-          handle_response_code json
-        end
+    class IPAddress < Object
+      private
+
+      def relationships
+        %w(
+          communicating_files
+          downloaded_files
+          graphs
+          historical_whois
+          referrer_files
+          resolutions
+          urls
+        ).map(&:to_sym)
       end
     end
   end
