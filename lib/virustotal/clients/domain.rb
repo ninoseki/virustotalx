@@ -2,11 +2,20 @@
 
 module VirusTotal
   module Client
-    class Domain < Base
-      def report(domain)
-        get("/domain/report", domain: domain) do |json|
-          handle_response_code json
-        end
+    class Domain < Object
+      private
+
+      def relationships
+        %w(
+          communicating_files
+          downloaded_files
+          graphs
+          historical_whois
+          referrer_files
+          resolutions
+          siblings
+          urls
+        ).map(&:to_sym)
       end
     end
   end

@@ -2,47 +2,76 @@
 
 module VirusTotal
   module Client
-    class File < Base
-      def report(resource, allinfo: nil)
-        params = { resource: resource, allinfo: allinfo }.compact
-        post("/file/report", params) do |json|
-          handle_response_code json
-        end
-      end
-
-      def scan(path)
+    class File < Object
+      def upload(path)
         name = ::File.basename(path)
         data = ::File.read(path)
-        post_with_file("/file/scan", filename: name, file: data) { |json| json }
-      end
-
-      def rescan(resource)
-        post("/file/rescan", resource: resource) { |json| json }
+        _post_with_file("/files", file: data, filename: name) { |json| json }
       end
 
       def upload_url
-        get("/file/scan/upload_url") { |location| location }
+        _get("/files/upload_url") { |json| json }
+      end
+
+      def analyse(hash)
+        _post("/files/#{hash}/analyse") { |json| json }
+      end
+
+      def votes(hash)
+        _get("/files/#{hash}/votes") { |json| json }
+      end
+
+      def add_vote(hash, verdict)
+        params = {
+          data: {
+            type: "vote",
+            attributes: {
+              verdict: verdict
+            }
+          }
+        }
+        _post("/files/#{hash}/votes", params) { |json| json }
+      end
+
+      def download_url(hash)
+        _get("/files/#{hash}/download_url") { |json| json }
       end
 
       def download(hash)
-        get("/file/download", hash: hash) { |raw| raw }
+        _get("/files/#{hash}/download") { |location| location }
       end
 
-      def behaviour(hash)
-        get("/file/behaviour", hash: hash) { |json| json }
+      def pcap(id)
+        _get("/file_behaviours/#{id}/pcap") { |raw| raw }
       end
 
-      def network_traffic(hash)
-        get("/file/network-traffic", hash: hash) { |json| json }
-      end
+      private
 
-      def clusters(date)
-        get("/file/clusters", date: date) { |json| json }
-      end
-
-      def search(query, offset: nil)
-        params = { query: query, offset: offset }.compact
-        get("/file/search", params) { |json| json }
+      def relationships
+        %w(
+          analyses
+          behaviours
+          bundled_files
+          carbonblack_children
+          carbonblack_parents
+          compressed_parents
+          contacted_domains
+          contacted_ips
+          contacted_urls
+          email_parents
+          embedded_domains
+          embedded_ips
+          execution_parents
+          graphs
+          itw_urls
+          overlay_parents
+          pcap_parents
+          pe_resource_parents
+          similar_files
+          submissions
+          screenshots
+          votes
+        ).map(&:to_sym)
       end
     end
   end

@@ -10,9 +10,11 @@ SimpleCov.start do
 end
 Coveralls.wear!
 
+require "vcr"
+
 require "virustotal"
 
-require "vcr"
+require_relative "./support/shared_examples/object_example"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure

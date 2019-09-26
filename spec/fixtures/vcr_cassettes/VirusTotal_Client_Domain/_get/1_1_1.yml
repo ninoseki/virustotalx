@@ -1,0 +1,268 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.virustotal.com/api/v3/domains/github.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-Apikey:
+      - "<VIRUSTOTAL_API_KEY>"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Cloud-Trace-Context:
+      - 1ff0a2cd3eb0b64e2b3e01693579fbee
+      Date:
+      - Thu, 26 Sep 2019 07:07:59 GMT
+      Server:
+      - Google Frontend
+      Content-Length:
+      - '11436'
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+            "data": {
+                "attributes": {
+                    "categories": {
+                        "BitDefender": "computersandsoftware",
+                        "Dr.Web": "social networks",
+                        "Forcepoint ThreatSeeker": "information technology",
+                        "Websense ThreatSeeker": "information technology"
+                    },
+                    "creation_date": 1191928850,
+                    "last_dns_records": [
+                        {
+                            "ttl": 59,
+                            "type": "A",
+                            "value": "140.82.114.3"
+                        },
+                        {
+                            "expire": 1209600,
+                            "minimum": 86400,
+                            "refresh": 7200,
+                            "retry": 900,
+                            "rname": "awsdns-hostmaster.amazon.com",
+                            "serial": 1,
+                            "ttl": 899,
+                            "type": "SOA",
+                            "value": "ns-1707.awsdns-21.co.uk"
+                        },
+                        {
+                            "ttl": 3599,
+                            "type": "TXT",
+                            "value": "MS=6BF03E6AF5CB689E315FB6199603BABF2C88D805"
+                        },
+                        {
+                            "ttl": 3599,
+                            "type": "TXT",
+                            "value": "MS=ms44452932"
+                        },
+                        {
+                            "ttl": 3599,
+                            "type": "TXT",
+                            "value": "MS=ms58704441"
+                        },
+                        {
+                            "ttl": 3599,
+                            "type": "TXT",
+                            "value": "docusign=087098e3-3d46-47b7-9b4e-8a23028154cd"
+                        },
+                        {
+                            "ttl": 3599,
+                            "type": "TXT",
+                            "value": "v=spf1 ip4:192.30.252.0/22 ip4:208.74.204.0/22 ip4:46.19.168.0/23 include:_spf.google.com include:esp.github.com include:_spf.createsend.com include:servers.mcsv.net ~all"
+                        },
+                        {
+                            "ttl": 296,
+                            "type": "NS",
+                            "value": "ns-1283.awsdns-32.org"
+                        },
+                        {
+                            "ttl": 296,
+                            "type": "NS",
+                            "value": "ns-1707.awsdns-21.co.uk"
+                        },
+                        {
+                            "ttl": 296,
+                            "type": "NS",
+                            "value": "ns-421.awsdns-52.com"
+                        },
+                        {
+                            "ttl": 296,
+                            "type": "NS",
+                            "value": "ns-520.awsdns-01.net"
+                        },
+                        {
+                            "ttl": 296,
+                            "type": "NS",
+                            "value": "ns1.p16.dynect.net"
+                        },
+                        {
+                            "ttl": 296,
+                            "type": "NS",
+                            "value": "ns2.p16.dynect.net"
+                        },
+                        {
+                            "ttl": 296,
+                            "type": "NS",
+                            "value": "ns3.p16.dynect.net"
+                        },
+                        {
+                            "ttl": 296,
+                            "type": "NS",
+                            "value": "ns4.p16.dynect.net"
+                        },
+                        {
+                            "priority": 1,
+                            "ttl": 3599,
+                            "type": "MX",
+                            "value": "ASPMX.L.GOOGLE.com"
+                        },
+                        {
+                            "priority": 10,
+                            "ttl": 3599,
+                            "type": "MX",
+                            "value": "ALT3.ASPMX.L.GOOGLE.com"
+                        },
+                        {
+                            "priority": 10,
+                            "ttl": 3599,
+                            "type": "MX",
+                            "value": "ALT4.ASPMX.L.GOOGLE.com"
+                        },
+                        {
+                            "priority": 5,
+                            "ttl": 3599,
+                            "type": "MX",
+                            "value": "ALT2.ASPMX.L.GOOGLE.com"
+                        },
+                        {
+                            "priority": 5,
+                            "ttl": 3599,
+                            "type": "MX",
+                            "value": "ALT1.ASPMX.L.GOOGLE.com"
+                        }
+                    ],
+                    "last_dns_records_date": 1569378705,
+                    "last_https_certificate": {
+                        "cert_signature": {
+                            "signature": "700f5a96a758e5bf8a9da827982b007f26a907daba7b82544faf69cfbcf259032bf2d5745825d81ea42076626029732ad7dccc6f77856bca6d24f83513473fd2e2690a9d342d7b7b9bcd1e75d5506c3ecb1ca330b1aa9207a93a767645bd7891c4ce1a9e22e40b89bae68cc17982a3b8d4c0fc1f2ded4d5255412aa83a2cad0772ae0ad2c667c44f07171899f765a95760155a344c11cff6cf6b213680efc6f15463263539eebbc483649b240a73eca0481673c8b9d7485556987af7bb975c69a406180478dafe9876be222f7f0777874e88199af855ec5c122a5948db493e155e675aa25eeecc53288c0e33931403640bc5e5780994015a75fc929dafed7a29",
+                            "signature_algorithm": "sha256RSA"
+                        },
+                        "extensions": {
+                            "1.3.6.1.4.1.11129.2.4.2": "0482016a0168007600a4b90990b418581487bb13a2cc67700a3c359804f91bdf",
+                            "CA": true,
+                            "authority_key_identifier": {
+                                "keyid": "3dd350a5d6a0adeef34a600a65d321d4f8f8d60f"
+                            },
+                            "ca_information_access": {
+                                "CA Issuers": "http://cacerts.digicert.com/DigiCertSHA2ExtendedValidationServerCA.crt",
+                                "OCSP": "http://ocsp.digicert.com"
+                            },
+                            "certificate_policies": [
+                                "2.16.840.1.114412.2.1",
+                                "2.23.140.1.1"
+                            ],
+                            "crl_distribution_points": [
+                                "http://crl3.digicert.com/sha2-ev-server-g2.crl",
+                                "http://crl4.digicert.com/sha2-ev-server-g2.crl"
+                            ],
+                            "extended_key_usage": [
+                                "serverAuth",
+                                "clientAuth"
+                            ],
+                            "key_usage": [
+                                "ff"
+                            ],
+                            "subject_alternative_name": [
+                                "github.com",
+                                "www.github.com"
+                            ],
+                            "subject_key_identifier": "c9c25361669d5fab25f426cd0f389aa849ea48a9",
+                            "tags": []
+                        },
+                        "issuer": {
+                            "C": "US",
+                            "CN": "DigiCert SHA2 Extended Validation Server CA",
+                            "O": "DigiCert Inc",
+                            "OU": "www.digicert.com"
+                        },
+                        "public_key": {
+                            "algorithm": "RSA",
+                            "rsa": {
+                                "exponent": "010001",
+                                "key_size": 2048,
+                                "modulus": "00c63caaf23c970c3ac14f28ad72707dd3ceb9b56073a4749b8a7746fd7a98424cc53019579aa9330be15d4d1058ca7799c393f3f97590bcbfbbe095ba2ec58d736105d31084a8b389b82f738cf02a6ebeeeae834b8211b161fd7761da9b1b9a23ff8c7ea20106ddd17f539608c15afae7c0cac8448c57a7a8615f660d57d3b896acb64a9cc1eae8fb964029f61530b504b0cc05b684c32459957fa26590e5b0b31a7559c43f31140ad5ccaa3a8505520632960761df27820cf785db6031f00950c5b71a23e1b07d02f5141ec9cbe87e2a3304f6513f529815e90b76475c4d4a6bc50815aef8d157e9ea7014ffc945b90c7cbcf46de60552f98c80bb7056910f4b"
+                            }
+                        },
+                        "serial_number": "a0630427f5bbced6957396593b6451f",
+                        "signature_algorithm": "sha256RSA",
+                        "size": 1862,
+                        "subject": {
+                            "C": "US",
+                            "CN": "github.com",
+                            "Country": "US",
+                            "L": "San Francisco",
+                            "O": "GitHub, Inc.",
+                            "ST": "California",
+                            "State": "Delaware",
+                            "businessCategory": "Private Organization",
+                            "serialNumber": "5157550"
+                        },
+                        "tags": [],
+                        "thumbprint": "ca06f56b258b7a0d4f2b05470939478651151984",
+                        "thumbprint_sha256": "3111500c4a66012cdae333ec3fca1c9dde45c954440e7ee413716bff3663c074",
+                        "validity": {
+                            "not_after": "2020-06-03 12:00:00",
+                            "not_before": "2018-05-08 00:00:00"
+                        },
+                        "version": "V3"
+                    },
+                    "last_https_certificate_date": 1569378705,
+                    "last_update_date": 1557730713,
+                    "popularity_ranks": {
+                        "Alexa": {
+                            "rank": 105,
+                            "timestamp": 1569425761
+                        },
+                        "Cisco Umbrella": {
+                            "rank": 2609,
+                            "timestamp": 1569425761
+                        },
+                        "Majestic": {
+                            "rank": 29,
+                            "timestamp": 1569339362
+                        },
+                        "Quantcast": {
+                            "rank": 165,
+                            "timestamp": 1569425764
+                        }
+                    },
+                    "registrar": "MarkMonitor Inc.",
+                    "reputation": 2,
+                    "total_votes": {
+                        "harmless": 2,
+                        "malicious": 0
+                    },
+                    "whois": "Admin Country: US\nAdmin Organization: GitHub, Inc.\nAdmin State/Province: CA\nCreation Date: 2007-10-09T11:20:50-0700\nCreation Date: 2007-10-09T18:20:50Z\nDNSSEC: unsigned\nDomain Name: GITHUB.COM\nDomain Name: github.com\nDomain Status: clientDeleteProhibited (https://www.icann.org/epp#clientDeleteProhibited)\nDomain Status: clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited\nDomain Status: clientTransferProhibited (https://www.icann.org/epp#clientTransferProhibited)\nDomain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited\nDomain Status: clientUpdateProhibited (https://www.icann.org/epp#clientUpdateProhibited)\nDomain Status: clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited\nName Server: NS-1283.AWSDNS-32.ORG\nName Server: NS-1707.AWSDNS-21.CO.UK\nName Server: NS-421.AWSDNS-52.COM\nName Server: NS-520.AWSDNS-01.NET\nName Server: NS1.P16.DYNECT.NET\nName Server: NS2.P16.DYNECT.NET\nName Server: NS3.P16.DYNECT.NET\nName Server: NS4.P16.DYNECT.NET\nName Server: ns-1283.awsdns-32.org\nName Server: ns-1707.awsdns-21.co.uk\nName Server: ns-421.awsdns-52.com\nName Server: ns-520.awsdns-01.net\nName Server: ns1.p16.dynect.net\nName Server: ns2.p16.dynect.net\nName Server: ns3.p16.dynect.net\nName Server: ns4.p16.dynect.net\nRegistrant Country: US\nRegistrant Organization: e9cfc3ab0c85f792\nRegistrant State/Province: b1952dfc047df18a\nRegistrar Abuse Contact Email: abusecomplaints@markmonitor.com\nRegistrar Abuse Contact Phone: +1.2083895740\nRegistrar IANA ID: 292\nRegistrar Registration Expiration Date: 2020-10-09T11:20:50-0700\nRegistrar URL: http://www.markmonitor.com\nRegistrar WHOIS Server: whois.markmonitor.com\nRegistrar: MarkMonitor Inc.\nRegistrar: MarkMonitor, Inc.\nRegistry Domain ID: 1264983250_DOMAIN_COM-VRSN\nRegistry Expiry Date: 2020-10-09T18:20:50Z\nTech Country: US\nTech Organization: GitHub, Inc.\nTech State/Province: CA\nUpdated Date: 2019-05-13T06:58:33-0700\nUpdated Date: 2019-05-13T13:58:34Z",
+                    "whois_date": 1567178787
+                },
+                "id": "github.com",
+                "links": {
+                    "self": "https://www.virustotal.com/api/v3/domains/github.com"
+                },
+                "type": "domain"
+            }
+        }
+    http_version: 
+  recorded_at: Thu, 26 Sep 2019 07:08:00 GMT
+recorded_with: VCR 4.0.0

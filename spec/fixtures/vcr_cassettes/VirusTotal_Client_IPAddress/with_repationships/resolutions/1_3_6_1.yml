@@ -1,0 +1,175 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.virustotal.com/api/v3/ip_addresses/1.1.1.1/resolutions
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-Apikey:
+      - "<VIRUSTOTAL_API_KEY>"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Cloud-Trace-Context:
+      - 9cdc75495d410c173f7603658f467d66
+      Date:
+      - Thu, 26 Sep 2019 07:20:18 GMT
+      Server:
+      - Google Frontend
+      Content-Length:
+      - '5091'
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+            "data": [
+                {
+                    "attributes": {
+                        "date": 1569482367,
+                        "host_name": "howlandtradingcompany.com",
+                        "ip_address": "1.1.1.1",
+                        "resolver": "VirusTotal"
+                    },
+                    "id": "1.1.1.1howlandtradingcompany.com",
+                    "links": {
+                        "self": "https://www.virustotal.com/api/v3/resolutions/1.1.1.1howlandtradingcompany.com"
+                    },
+                    "type": "resolution"
+                },
+                {
+                    "attributes": {
+                        "date": 1569481108,
+                        "host_name": "gmrwlpay.net",
+                        "ip_address": "1.1.1.1",
+                        "resolver": "VirusTotal"
+                    },
+                    "id": "1.1.1.1gmrwlpay.net",
+                    "links": {
+                        "self": "https://www.virustotal.com/api/v3/resolutions/1.1.1.1gmrwlpay.net"
+                    },
+                    "type": "resolution"
+                },
+                {
+                    "attributes": {
+                        "date": 1569481089,
+                        "host_name": "diveputriduyung.com",
+                        "ip_address": "1.1.1.1",
+                        "resolver": "VirusTotal"
+                    },
+                    "id": "1.1.1.1diveputriduyung.com",
+                    "links": {
+                        "self": "https://www.virustotal.com/api/v3/resolutions/1.1.1.1diveputriduyung.com"
+                    },
+                    "type": "resolution"
+                },
+                {
+                    "attributes": {
+                        "date": 1569481082,
+                        "host_name": "pitc.app",
+                        "ip_address": "1.1.1.1",
+                        "resolver": "VirusTotal"
+                    },
+                    "id": "1.1.1.1pitc.app",
+                    "links": {
+                        "self": "https://www.virustotal.com/api/v3/resolutions/1.1.1.1pitc.app"
+                    },
+                    "type": "resolution"
+                },
+                {
+                    "attributes": {
+                        "date": 1569478617,
+                        "host_name": "lvjnouq.wrdg.vzapc.forum.mythem.es",
+                        "ip_address": "1.1.1.1",
+                        "resolver": "VirusTotal"
+                    },
+                    "id": "1.1.1.1lvjnouq.wrdg.vzapc.forum.mythem.es",
+                    "links": {
+                        "self": "https://www.virustotal.com/api/v3/resolutions/1.1.1.1lvjnouq.wrdg.vzapc.forum.mythem.es"
+                    },
+                    "type": "resolution"
+                },
+                {
+                    "attributes": {
+                        "date": 1569478395,
+                        "host_name": "startupmuslim.ca",
+                        "ip_address": "1.1.1.1",
+                        "resolver": "VirusTotal"
+                    },
+                    "id": "1.1.1.1startupmuslim.ca",
+                    "links": {
+                        "self": "https://www.virustotal.com/api/v3/resolutions/1.1.1.1startupmuslim.ca"
+                    },
+                    "type": "resolution"
+                },
+                {
+                    "attributes": {
+                        "date": 1569478063,
+                        "host_name": "lexgjflism.aclmrnxkk.aezwtjat.agollvse.forum.mythem.es",
+                        "ip_address": "1.1.1.1",
+                        "resolver": "VirusTotal"
+                    },
+                    "id": "1.1.1.1lexgjflism.aclmrnxkk.aezwtjat.agollvse.forum.mythem.es",
+                    "links": {
+                        "self": "https://www.virustotal.com/api/v3/resolutions/1.1.1.1lexgjflism.aclmrnxkk.aezwtjat.agollvse.forum.mythem.es"
+                    },
+                    "type": "resolution"
+                },
+                {
+                    "attributes": {
+                        "date": 1569476838,
+                        "host_name": "ark.suntv.pub",
+                        "ip_address": "1.1.1.1",
+                        "resolver": "VirusTotal"
+                    },
+                    "id": "1.1.1.1ark.suntv.pub",
+                    "links": {
+                        "self": "https://www.virustotal.com/api/v3/resolutions/1.1.1.1ark.suntv.pub"
+                    },
+                    "type": "resolution"
+                },
+                {
+                    "attributes": {
+                        "date": 1569476342,
+                        "host_name": "thomaslkjeldsen.dk",
+                        "ip_address": "1.1.1.1",
+                        "resolver": "VirusTotal"
+                    },
+                    "id": "1.1.1.1thomaslkjeldsen.dk",
+                    "links": {
+                        "self": "https://www.virustotal.com/api/v3/resolutions/1.1.1.1thomaslkjeldsen.dk"
+                    },
+                    "type": "resolution"
+                },
+                {
+                    "attributes": {
+                        "date": 1569475034,
+                        "host_name": "rdlgpay.net",
+                        "ip_address": "1.1.1.1",
+                        "resolver": "VirusTotal"
+                    },
+                    "id": "1.1.1.1rdlgpay.net",
+                    "links": {
+                        "self": "https://www.virustotal.com/api/v3/resolutions/1.1.1.1rdlgpay.net"
+                    },
+                    "type": "resolution"
+                }
+            ],
+            "links": {
+                "next": "https://www.virustotal.com/api/v3/ip_addresses/1.1.1.1/resolutions?cursor=ClAKEQoEZGF0ZRIJCOmVo4_e7eQCEjdqEXN-dmlydXN0b3RhbGNsb3VkciILEgpSZXNvbHV0aW9uIhIxLjEuMS4xcmRsZ3BheS5uZXQMGAAgAQ%3D%3D&limit=10",
+                "self": "https://www.virustotal.com/api/v3/ip_addresses/1.1.1.1/resolutions?limit=10"
+            },
+            "meta": {
+                "cursor": "ClAKEQoEZGF0ZRIJCOmVo4_e7eQCEjdqEXN-dmlydXN0b3RhbGNsb3VkciILEgpSZXNvbHV0aW9uIhIxLjEuMS4xcmRsZ3BheS5uZXQMGAAgAQ=="
+            }
+        }
+    http_version: 
+  recorded_at: Thu, 26 Sep 2019 07:20:19 GMT
+recorded_with: VCR 4.0.0

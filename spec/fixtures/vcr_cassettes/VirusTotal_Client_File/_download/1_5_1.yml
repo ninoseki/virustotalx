@@ -1,42 +1,36 @@
 ---
 http_interactions:
-- request:
-    method: get
-    uri: https://www.virustotal.com/vtapi/v2/file/download?apikey=<VIRUSTOTAL_API_KEY>&hash=726a2eedb9df3d63ec1b4a7d774a799901f1a2b9
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-      Host:
-      - www.virustotal.com
-  response:
-    status:
-      code: 302
-      message: Found
-    headers:
-      Content-Type:
-      - text/html; charset=utf-8
-      Cache-Control:
-      - no-cache
-      Location:
-      - https://vtsamples.commondatastorage.googleapis.com/b35ef2d8a3ee0d29eecb83acf45c1f192ceca75ab10dec861166af2b7bda373b?GoogleAccessId=758681729565-rc7fgq07icj8c9dm2gi34a4cckv235v1@developer.gserviceaccount.com&Expires=1556795825&Signature=iyi%2BBJnjJjmeNV1fLm69ZcW1O01Nv6km9QoaKJmLIFD7qNqb1wO1i1QVv%2BkzdYUtFuyxzY1D5%2Bnw%0AkD5rn20c9k8B2wJbti6v8gfLDs%2FWTlbV8ZrBrRGIIMecsYP71yMkvckaqc5%2FBLS5FkRt1H7fZv6o%0AGsqjlS5PBKalDqLrhWI%3D
-      X-Cloud-Trace-Context:
-      - ce1e927601a99423e0c67ab767f6d04f
-      Date:
-      - Thu, 02 May 2019 11:07:05 GMT
-      Server:
-      - Google Frontend
-      Content-Length:
-      - '0'
-    body:
-      encoding: UTF-8
-      string: ''
-    http_version: 
-  recorded_at: Thu, 02 May 2019 11:06:41 GMT
+  - request:
+      method: get
+      uri: https://www.virustotal.com/api/v3/files/275a021bbfb6489e54d471899f7db9d1663fc695ec2fe2a2c4538aabf651fd0f/download
+      body:
+        encoding: US-ASCII
+        string: ""
+      headers:
+        X-Apikey:
+          - "<VIRUSTOTAL_API_KEY>"
+    response:
+      status:
+        code: 302
+        message: Found
+      headers:
+        Content-Type:
+          - text/html; charset=utf-8
+        Cache-Control:
+          - no-cache
+        Location:
+          - https://vtsamples.commondatastorage.googleapis.com/foo_bar;
+        X-Cloud-Trace-Context:
+          - 7ad2051d38c2bbd784c5f205e74f32ee
+        Date:
+          - Thu, 26 Sep 2019 08:10:46 GMT
+        Server:
+          - Google Frontend
+        Content-Length:
+          - "0"
+      body:
+        encoding: UTF-8
+        string: ""
+      http_version:
+    recorded_at: Thu, 26 Sep 2019 08:10:46 GMT
 recorded_with: VCR 4.0.0

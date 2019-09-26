@@ -1,0 +1,45 @@
+---
+http_interactions:
+  - request:
+      method: get
+      uri: https://www.virustotal.com/api/v3/files/275a021bbfb6489e54d471899f7db9d1663fc695ec2fe2a2c4538aabf651fd0f/download_url
+      body:
+        encoding: US-ASCII
+        string: ""
+      headers:
+        Accept-Encoding:
+          - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+        Accept:
+          - "*/*"
+        User-Agent:
+          - Ruby
+        Host:
+          - www.virustotal.com
+        X-Apikey:
+          - "<VIRUSTOTAL_API_KEY>"
+    response:
+      status:
+        code: 200
+        message: OK
+      headers:
+        Cache-Control:
+          - no-cache
+        Content-Type:
+          - application/json; charset=utf-8
+        X-Cloud-Trace-Context:
+          - d912d7eef318eca89e68533beb4285b2
+        Date:
+          - Thu, 26 Sep 2019 11:42:09 GMT
+        Server:
+          - Google Frontend
+        Content-Length:
+          - "627"
+      body:
+        encoding: UTF-8
+        string: |-
+          {
+              "data": "https://vtsamples.commondatastorage.googleapis.com/foo_bar"
+          }
+      http_version:
+    recorded_at: Thu, 26 Sep 2019 11:42:09 GMT
+recorded_with: VCR 4.0.0
