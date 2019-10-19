@@ -11,6 +11,14 @@ module VirusTotal
       VERSION = "v3"
       BASE_URL = "https://#{HOST}/api/#{VERSION}"
 
+      CONVERT_TABLE = {
+        analysis: "analyses",
+        domain: "domains",
+        file: "files",
+        ipaddress: "ip_addresses",
+        url: "urls",
+      }.freeze
+
       attr_reader :key
 
       def initialize(key: ENV["VIRUSTOTAL_API_KEY"])
@@ -110,6 +118,18 @@ module VirusTotal
         post.set_form(data, "multipart/form-data")
 
         request(post, &block)
+      end
+
+      def to_id(id)
+        id
+      end
+
+      def klass
+        self.class.to_s.split("::").last.to_s.downcase.to_sym
+      end
+
+      def name
+        CONVERT_TABLE.fetch klass
       end
     end
   end

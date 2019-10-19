@@ -2,7 +2,12 @@
 
 module VirusTotal
   module Client
-    class File < Object
+    class File < Base
+      include Action::Comments
+      include Action::Get
+      include Action::Relationships
+      include Action::Votes
+
       #
       # Upload and analyse a file
       #
@@ -40,41 +45,6 @@ module VirusTotal
       #
       def analyse(hash)
         _post("/files/#{hash}/analyse") { |json| json }
-      end
-
-      #
-      # Retrieve votes for a file
-      #
-      # @see https://developers.virustotal.com/v3.0/reference#files-votes-get
-      #
-      # @param [hash] SHA-256, SHA-1 or MD5 identifying the file
-      #
-      # @return [Hash]
-      #
-      def votes(hash)
-        _get("/files/#{hash}/votes") { |json| json }
-      end
-
-      #
-      # Add a vote for a file
-      #
-      # @see https://developers.virustotal.com/v3.0/reference#files-votes-post
-      #
-      # @param [String] hash SHA-256, SHA-1 or MD5 identifying the file
-      # @param [String] verdict harmless or malicious
-      #
-      # @return [Hash]
-      #
-      def add_vote(hash, verdict)
-        params = {
-          data: {
-            type: "vote",
-            attributes: {
-              verdict: verdict
-            }
-          }
-        }
-        _post("/files/#{hash}/votes", params) { |json| json }
       end
 
       #

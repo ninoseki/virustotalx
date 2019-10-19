@@ -2,7 +2,11 @@
 
 module VirusTotal
   module Client
-    class Domain < Object
+    class Domain < Base
+      include Action::Comments
+      include Action::Get
+      include Action::Relationships
+
       private
 
       def relationships
