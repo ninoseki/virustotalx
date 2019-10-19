@@ -77,7 +77,7 @@ module VirusTotal
       end
 
       def relationships
-        %w(
+        @relationships ||= %w(
           analyses
           downloaded_files
           graphs

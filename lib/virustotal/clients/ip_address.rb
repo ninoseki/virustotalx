@@ -6,7 +6,7 @@ module VirusTotal
       private
 
       def relationships
-        %w(
+        @relationships ||= %w(
           communicating_files
           downloaded_files
           graphs

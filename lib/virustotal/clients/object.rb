@@ -70,10 +70,8 @@ module VirusTotal
         end
       end
 
-      def respond_to?(sym, *)
-        return true if relationships.include? sym
-
-        super
+      def respond_to_missing?(method_name, *)
+        relationships.include? method_name
       end
 
       private
