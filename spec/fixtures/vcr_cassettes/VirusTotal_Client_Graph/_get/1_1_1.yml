@@ -1,0 +1,82 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.virustotal.com/api/v3/graphs/g7bca5023c497475bbc737e8c29f32a0c3d7b9c5eb8af43bab7b59dd1f6f17e79
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - www.virustotal.com
+      X-Apikey:
+      - "<VIRUSTOTAL_API_KEY>"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Cloud-Trace-Context:
+      - 42263d1aa2767167ab32cb8bf3efcf1d
+      Date:
+      - Sat, 19 Oct 2019 11:39:24 GMT
+      Server:
+      - Google Frontend
+      Content-Length:
+      - '1294'
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+            "data": {
+                "attributes": {
+                    "comments_count": 0,
+                    "creation_date": 1571462333,
+                    "graph_data": {
+                        "description": "Untitled Graph",
+                        "version": "3.8.2"
+                    },
+                    "last_modified_date": 1571462333,
+                    "links": [],
+                    "nodes": [
+                        {
+                            "entity_attributes": {
+                                "has_detections": false,
+                                "type_tag": "rar"
+                            },
+                            "entity_id": "aa766b215e8614615f3477c0b22ec5b80d013e8527a18d1ecf08cf3076e5cae1",
+                            "index": 0,
+                            "text": "hang moi1.rar",
+                            "type": "file",
+                            "x": 0,
+                            "y": 0
+                        }
+                    ],
+                    "position": {
+                        "scale": "0.4829681504149977",
+                        "x": 889,
+                        "y": 377
+                    },
+                    "private": false,
+                    "views_count": 7
+                },
+                "id": "g7bca5023c497475bbc737e8c29f32a0c3d7b9c5eb8af43bab7b59dd1f6f17e79",
+                "links": {
+                    "self": "https://www.virustotal.com/api/v3/graphs/g7bca5023c497475bbc737e8c29f32a0c3d7b9c5eb8af43bab7b59dd1f6f17e79"
+                },
+                "type": "graph"
+            }
+        }
+    http_version: 
+  recorded_at: Sat, 19 Oct 2019 11:39:24 GMT
+recorded_with: VCR 5.0.0

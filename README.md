@@ -39,12 +39,12 @@ api.ip_address.get("1.1.1.1")
 
 ## Supported API endpoints
 
-* [VirusTotal API reference](https://developers.virustotal.com/v3.0/reference#overview)
+- [VirusTotal API reference](https://developers.virustotal.com/v3.0/reference#overview)
 
 ### Files
 
 | HTTP Method | URL                                | API method                                                 |
-|-------------|------------------------------------|------------------------------------------------------------|
+| ----------- | ---------------------------------- | ---------------------------------------------------------- |
 | POST        | /files                             | api.file.upload(filepath)                                  |
 | GET         | /files/upload_url                  | api.file.upload_url                                        |
 | GET         | /files/{id}                        | api.file.get(id)                                           |
@@ -62,7 +62,7 @@ api.ip_address.get("1.1.1.1")
 ### URLs
 
 | HTTP Method | URL                         | API method                                                     |
-|-------------|-----------------------------|----------------------------------------------------------------|
+| ----------- | --------------------------- | -------------------------------------------------------------- |
 | POST        | /urls                       | N/A                                                            |
 | GET         | /urls/{id}                  | api.url.get(id)                                                |
 | POST        | /urls/{id}/analyse          | api.url.analyse(id)                                            |
@@ -78,7 +78,7 @@ Note: you can use a URL as an id.
 ### Domains
 
 | HTTP Method | URL                              | API method                                                   |
-|-------------|----------------------------------|--------------------------------------------------------------|
+| ----------- | -------------------------------- | ------------------------------------------------------------ |
 | GET         | /domains/{domain}                | api.domain.get(domain)                                       |
 | GET         | /domains/{domain}/comments       | api.domain.comment(domain)                                   |
 | POST        | /domains/{domain}/comments       | api.domain.add_comment(domain, text)                         |
@@ -87,7 +87,7 @@ Note: you can use a URL as an id.
 ### IP addresses
 
 | HTTP Method | URL                               | API method                                                                      |
-|-------------|-----------------------------------|---------------------------------------------------------------------------------|
+| ----------- | --------------------------------- | ------------------------------------------------------------------------------- |
 | GET         | /ip_addresses/{ip}                | api.ip_address.get(ip)                                                          |
 | GET         | /ip_addresses/{ip}/comments       | api.ip_address.comments(id)                                                     |
 | POST        | /ip_addresses/{ip}/comments       | api.ip_address.add_comment(id, text)                                            |
@@ -96,12 +96,26 @@ Note: you can use a URL as an id.
 ### Analyses
 
 | HTTP Method | URL            | API method           |
-|-------------|----------------|----------------------|
+| ----------- | -------------- | -------------------- |
 | GET         | /analyses/{id} | api.analysis.get(ip) |
 
 ## Graphs
 
-N/A.
+| HTTP Method | URL                                                  | API method                                                                          |
+| ----------- | ---------------------------------------------------- | ----------------------------------------------------------------------------------- |
+| GET         | graphs                                               | api.graph.search(filter: nil, limit: nil, cursor: nil, order: nil, attributes: nil) |
+| POST        | graphs                                               | api.graph.create(\*\*params)                                                        |
+| GET         | graphs/{id}                                          | api.graph.get(id)                                                                   |
+| PATCH       | graphs/{id}                                          | api.graph.update(id, \*\*params)                                                    |
+| GET         | graphs/{id}/relationships/viewers                    | api.graph.viewers(id, limit: nil, cursor: nil)                                      |
+| POST        | graphs/{id}/relationships/viewers                    | api.graph.add_viewer(id, \*\*params)                                                |
+| GET         | graphs/{id}/relationships/viewers/{user_or_group_id} | api.graph.check_viewer(id, user_or_group_id)                                        |
+| DELETE      | graphs/{id}/relationships/viewers/{user_or_group_id} | api.graph.delete_viewer(id, user_or_group_id)                                       |
+| GET         | graphs/{id}/relationships/editors                    | api.graph.editors(id, limit: nil, cursor: nil)                                      |
+| POST        | graphs/{id}/relationships/editors                    | api.graph.add_editor(id, \*\*params)                                                |
+| GET         | graphs/{id}/relationships/editors/{user_or_group_id} | api.graph.check_editor(id, user_or_group_id)                                        |
+| DELETE      | graphs/{id}/relationships/editors/{user_or_group_id} | api.graph.delete_editor(id, user_or_group_id)                                       |
+| GET         | graphs/{id}/relationships/{relationship}             | api.graph.`relationship`(id)                                                        |
 
 ## License
 

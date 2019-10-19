@@ -60,5 +60,14 @@ module VirusTotal
     def url
       @url ||= Client::URL.new(key: key)
     end
+
+    #
+    # Graphs API endpoint client
+    #
+    # @return [VirusTotal::Client::Graph]
+    #
+    def graph
+      @graph ||= Client::Graph.new(key: key)
+    end
   end
 end
