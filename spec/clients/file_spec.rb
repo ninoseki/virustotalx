@@ -3,7 +3,11 @@
 require "date"
 
 RSpec.describe VirusTotal::Client::File, :vcr do
+  include_context "client context"
+
   let(:id) { "275a021bbfb6489e54d471899f7db9d1663fc695ec2fe2a2c4538aabf651fd0f" }
+
+  include_examples "votes example"
 
   describe "#upload" do
     let(:path) { File.expand_path("../fixtures/test.txt", __dir__) }
@@ -17,13 +21,6 @@ RSpec.describe VirusTotal::Client::File, :vcr do
   describe "#analyse" do
     it do
       res = subject.analyse(id)
-      expect(res).to be_a(Hash)
-    end
-  end
-
-  describe "#votes" do
-    it do
-      res = subject.votes(id)
       expect(res).to be_a(Hash)
     end
   end

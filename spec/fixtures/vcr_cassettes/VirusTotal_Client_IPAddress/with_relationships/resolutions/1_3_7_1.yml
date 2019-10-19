@@ -1,0 +1,183 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.virustotal.com/api/v3/ip_addresses/1.1.1.1/resolutions
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - www.virustotal.com
+      X-Apikey:
+      - "<VIRUSTOTAL_API_KEY>"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Cloud-Trace-Context:
+      - a92299a25956a1f16a8929482cd45bce
+      Date:
+      - Sat, 19 Oct 2019 22:36:31 GMT
+      Server:
+      - Google Frontend
+      Content-Length:
+      - '5057'
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+            "data": [
+                {
+                    "attributes": {
+                        "date": 1571522736,
+                        "host_name": "kdhnuvweq.xpqgimn.qypvthu.loqu.forum.mythem.es",
+                        "ip_address": "1.1.1.1",
+                        "resolver": "VirusTotal"
+                    },
+                    "id": "1.1.1.1kdhnuvweq.xpqgimn.qypvthu.loqu.forum.mythem.es",
+                    "links": {
+                        "self": "https://www.virustotal.com/api/v3/resolutions/1.1.1.1kdhnuvweq.xpqgimn.qypvthu.loqu.forum.mythem.es"
+                    },
+                    "type": "resolution"
+                },
+                {
+                    "attributes": {
+                        "date": 1571519987,
+                        "host_name": "fr33q.no-ip.biz",
+                        "ip_address": "1.1.1.1",
+                        "resolver": "VirusTotal"
+                    },
+                    "id": "1.1.1.1fr33q.no-ip.biz",
+                    "links": {
+                        "self": "https://www.virustotal.com/api/v3/resolutions/1.1.1.1fr33q.no-ip.biz"
+                    },
+                    "type": "resolution"
+                },
+                {
+                    "attributes": {
+                        "date": 1571519680,
+                        "host_name": "jcuuhwt.forum.mythem.es",
+                        "ip_address": "1.1.1.1",
+                        "resolver": "VirusTotal"
+                    },
+                    "id": "1.1.1.1jcuuhwt.forum.mythem.es",
+                    "links": {
+                        "self": "https://www.virustotal.com/api/v3/resolutions/1.1.1.1jcuuhwt.forum.mythem.es"
+                    },
+                    "type": "resolution"
+                },
+                {
+                    "attributes": {
+                        "date": 1571516951,
+                        "host_name": "maxmax.biz",
+                        "ip_address": "1.1.1.1",
+                        "resolver": "VirusTotal"
+                    },
+                    "id": "1.1.1.1maxmax.biz",
+                    "links": {
+                        "self": "https://www.virustotal.com/api/v3/resolutions/1.1.1.1maxmax.biz"
+                    },
+                    "type": "resolution"
+                },
+                {
+                    "attributes": {
+                        "date": 1571515997,
+                        "host_name": "rene-laumann.com",
+                        "ip_address": "1.1.1.1",
+                        "resolver": "VirusTotal"
+                    },
+                    "id": "1.1.1.1rene-laumann.com",
+                    "links": {
+                        "self": "https://www.virustotal.com/api/v3/resolutions/1.1.1.1rene-laumann.com"
+                    },
+                    "type": "resolution"
+                },
+                {
+                    "attributes": {
+                        "date": 1571515669,
+                        "host_name": "thedrinksservice.net",
+                        "ip_address": "1.1.1.1",
+                        "resolver": "VirusTotal"
+                    },
+                    "id": "1.1.1.1thedrinksservice.net",
+                    "links": {
+                        "self": "https://www.virustotal.com/api/v3/resolutions/1.1.1.1thedrinksservice.net"
+                    },
+                    "type": "resolution"
+                },
+                {
+                    "attributes": {
+                        "date": 1571515094,
+                        "host_name": "bannerpt.casino.com",
+                        "ip_address": "1.1.1.1",
+                        "resolver": "VirusTotal"
+                    },
+                    "id": "1.1.1.1bannerpt.casino.com",
+                    "links": {
+                        "self": "https://www.virustotal.com/api/v3/resolutions/1.1.1.1bannerpt.casino.com"
+                    },
+                    "type": "resolution"
+                },
+                {
+                    "attributes": {
+                        "date": 1571513244,
+                        "host_name": "llxguest.llxgbs.com",
+                        "ip_address": "1.1.1.1",
+                        "resolver": "VirusTotal"
+                    },
+                    "id": "1.1.1.1llxguest.llxgbs.com",
+                    "links": {
+                        "self": "https://www.virustotal.com/api/v3/resolutions/1.1.1.1llxguest.llxgbs.com"
+                    },
+                    "type": "resolution"
+                },
+                {
+                    "attributes": {
+                        "date": 1571513195,
+                        "host_name": "qn.wjmydhs.com",
+                        "ip_address": "1.1.1.1",
+                        "resolver": "VirusTotal"
+                    },
+                    "id": "1.1.1.1qn.wjmydhs.com",
+                    "links": {
+                        "self": "https://www.virustotal.com/api/v3/resolutions/1.1.1.1qn.wjmydhs.com"
+                    },
+                    "type": "resolution"
+                },
+                {
+                    "attributes": {
+                        "date": 1571512576,
+                        "host_name": "stockpeizi.com",
+                        "ip_address": "1.1.1.1",
+                        "resolver": "VirusTotal"
+                    },
+                    "id": "1.1.1.1stockpeizi.com",
+                    "links": {
+                        "self": "https://www.virustotal.com/api/v3/resolutions/1.1.1.1stockpeizi.com"
+                    },
+                    "type": "resolution"
+                }
+            ],
+            "links": {
+                "next": "https://www.virustotal.com/api/v3/ip_addresses/1.1.1.1/resolutions?cursor=ClMKEQoEZGF0ZRIJCPTGk8eEqeUCEjpqEXN-dmlydXN0b3RhbGNsb3VkciULEgpSZXNvbHV0aW9uIhUxLjEuMS4xc3RvY2twZWl6aS5jb20MGAAgAQ%3D%3D&limit=10",
+                "self": "https://www.virustotal.com/api/v3/ip_addresses/1.1.1.1/resolutions?limit=10"
+            },
+            "meta": {
+                "cursor": "ClMKEQoEZGF0ZRIJCPTGk8eEqeUCEjpqEXN-dmlydXN0b3RhbGNsb3VkciULEgpSZXNvbHV0aW9uIhUxLjEuMS4xc3RvY2twZWl6aS5jb20MGAAgAQ=="
+            }
+        }
+    http_version: 
+  recorded_at: Sat, 19 Oct 2019 22:36:31 GMT
+recorded_with: VCR 5.0.0

@@ -1,45 +1,45 @@
 ---
 http_interactions:
-  - request:
-      method: get
-      uri: https://www.virustotal.com/api/v3/files/275a021bbfb6489e54d471899f7db9d1663fc695ec2fe2a2c4538aabf651fd0f/download_url
-      body:
-        encoding: US-ASCII
-        string: ""
-      headers:
-        Accept-Encoding:
-          - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-        Accept:
-          - "*/*"
-        User-Agent:
-          - Ruby
-        Host:
-          - www.virustotal.com
-        X-Apikey:
-          - "<VIRUSTOTAL_API_KEY>"
-    response:
-      status:
-        code: 200
-        message: OK
-      headers:
-        Cache-Control:
-          - no-cache
-        Content-Type:
-          - application/json; charset=utf-8
-        X-Cloud-Trace-Context:
-          - d912d7eef318eca89e68533beb4285b2
-        Date:
-          - Thu, 26 Sep 2019 11:42:09 GMT
-        Server:
-          - Google Frontend
-        Content-Length:
-          - "627"
-      body:
-        encoding: UTF-8
-        string: |-
-          {
-              "data": "https://vtsamples.commondatastorage.googleapis.com/foo_bar"
-          }
-      http_version:
-    recorded_at: Thu, 26 Sep 2019 11:42:09 GMT
-recorded_with: VCR 4.0.0
+- request:
+    method: get
+    uri: https://www.virustotal.com/api/v3/files/275a021bbfb6489e54d471899f7db9d1663fc695ec2fe2a2c4538aabf651fd0f/download_url
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - www.virustotal.com
+      X-Apikey:
+      - "<VIRUSTOTAL_API_KEY>"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Cloud-Trace-Context:
+      - 13f75ac7227f1d0d3cc1ebe0576f58c7
+      Date:
+      - Sat, 19 Oct 2019 22:43:44 GMT
+      Server:
+      - Google Frontend
+      Content-Length:
+      - '629'
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+            "data": "https://vtsamples.commondatastorage.googleapis.com/275a021bbfb6489e54d471899f7db9d1663fc695ec2fe2a2c4538aabf651fd0f?GoogleAccessId=758681729565-rc7fgq07icj8c9dm2gi34a4cckv235v1@developer.gserviceaccount.com&Expires=1571528624&Signature=W6VISwPF%2FuxeBjoj2S%2Bx3eAu45nt2W%2FSUfNI8VHwkL5%2F6Nt29DxH02d24O3s0fYDMoC2GE%2B%2Bdo4M%0A6Ag%2FC96WKI%2B3W1PaD%2BdOiRgVkDtzi5TEdOLzEv1HvmmcLy4EFCzv87eutswjXHa7YX0wuK3nwJuW%0AgOzatLpr1pmLlUVc0kI%3D&response-content-disposition=attachment%3B%20filename%3D%22275a021bbfb6489e54d471899f7db9d1663fc695ec2fe2a2c4538aabf651fd0f%22&response-content-type=application%2Foctet-stream;"
+        }
+    http_version: 
+  recorded_at: Sat, 19 Oct 2019 22:43:44 GMT
+recorded_with: VCR 5.0.0

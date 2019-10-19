@@ -14,7 +14,12 @@ require "vcr"
 
 require "virustotal"
 
-require_relative "./support/shared_examples/object_example"
+require_relative "./support/shared_contexts/client_context"
+
+require_relative "./support/shared_examples/get_example"
+require_relative "./support/shared_examples/comments_example"
+require_relative "./support/shared_examples/relationships_example"
+require_relative "./support/shared_examples/votes_example"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure

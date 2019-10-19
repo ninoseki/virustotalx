@@ -1,0 +1,155 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.virustotal.com/api/v3/domains/github.com/historical_whois
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - www.virustotal.com
+      X-Apikey:
+      - "<VIRUSTOTAL_API_KEY>"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Cloud-Trace-Context:
+      - 7ab280b64a1b83af63722c8b64905363;o=1
+      Date:
+      - Sat, 19 Oct 2019 22:36:15 GMT
+      Server:
+      - Google Frontend
+      Content-Length:
+      - '7684'
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+            "data": [
+                {
+                    "attributes": {
+                        "first_seen_date": 1570061726,
+                        "last_updated": 1557755914,
+                        "registrar_name": "MarkMonitor Inc.",
+                        "whois_map": {
+                            "Creation Date": "2007-10-09T18:20:50Z",
+                            "DNSSEC": "unsigned",
+                            "Domain Name": "GITHUB.COM",
+                            "Domain Status": "clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited | clientTransferProhibited https://icann.org/epp#clientTransferProhibited | clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited",
+                            "Name Server": "NS-1283.AWSDNS-32.ORG | NS-1707.AWSDNS-21.CO.UK | NS-421.AWSDNS-52.COM | NS-520.AWSDNS-01.NET | NS1.P16.DYNECT.NET | NS2.P16.DYNECT.NET | NS3.P16.DYNECT.NET | NS4.P16.DYNECT.NET",
+                            "Registrar": "MarkMonitor Inc.",
+                            "Registrar Abuse Contact Email": "abusecomplaints@markmonitor.com",
+                            "Registrar Abuse Contact Phone": "+1.2083895740",
+                            "Registrar IANA ID": "292",
+                            "Registrar URL": "http://www.markmonitor.com",
+                            "Registrar WHOIS Server": "whois.markmonitor.com",
+                            "Registry Domain ID": "1264983250_DOMAIN_COM-VRSN",
+                            "Registry Expiry Date": "2020-10-09T18:20:50Z",
+                            "Updated Date": "2019-05-13T13:58:34Z"
+                        }
+                    },
+                    "id": "b1be45e4fabf80c22bedd011c4175258581a5091111ea05cc436eec30d46fe48",
+                    "links": {
+                        "self": "https://www.virustotal.com/api/v3/whois/b1be45e4fabf80c22bedd011c4175258581a5091111ea05cc436eec30d46fe48"
+                    },
+                    "type": "whois"
+                },
+                {
+                    "attributes": {
+                        "first_seen_date": 1569813243,
+                        "last_updated": 1557755914,
+                        "registrant_country": "US",
+                        "registrar_name": "MarkMonitor Inc. | MarkMonitor, Inc.",
+                        "whois_map": {
+                            "Admin Country": "US",
+                            "Admin Organization": "GitHub, Inc.",
+                            "Admin State/Province": "CA",
+                            "Creation Date": "2007-10-09T11:20:50-0700 | 2007-10-09T18:20:50Z",
+                            "DNSSEC": "unsigned",
+                            "Domain Name": "GITHUB.COM | github.com",
+                            "Domain Status": "clientDeleteProhibited (https://www.icann.org/epp#clientDeleteProhibited) | clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited | clientTransferProhibited (https://www.icann.org/epp#clientTransferProhibited) | clientTransferProhibited https://icann.org/epp#clientTransferProhibited | clientUpdateProhibited (https://www.icann.org/epp#clientUpdateProhibited) | clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited",
+                            "Name Server": "NS-1283.AWSDNS-32.ORG | NS-1707.AWSDNS-21.CO.UK | NS-421.AWSDNS-52.COM | NS-520.AWSDNS-01.NET | NS1.P16.DYNECT.NET | NS2.P16.DYNECT.NET | NS3.P16.DYNECT.NET | NS4.P16.DYNECT.NET | ns-1283.awsdns-32.org | ns-1707.awsdns-21.co.uk | ns-421.awsdns-52.com | ns-520.awsdns-01.net | ns1.p16.dynect.net | ns2.p16.dynect.net | ns3.p16.dynect.net | ns4.p16.dynect.net",
+                            "Registrant Country": "US",
+                            "Registrant Organization": "e9cfc3ab0c85f792",
+                            "Registrant State/Province": "b1952dfc047df18a",
+                            "Registrar": "MarkMonitor Inc. | MarkMonitor, Inc.",
+                            "Registrar Abuse Contact Email": "abusecomplaints@markmonitor.com",
+                            "Registrar Abuse Contact Phone": "+1.2083895740",
+                            "Registrar IANA ID": "292",
+                            "Registrar Registration Expiration Date": "2020-10-09T11:20:50-0700",
+                            "Registrar URL": "http://www.markmonitor.com",
+                            "Registrar WHOIS Server": "whois.markmonitor.com",
+                            "Registry Domain ID": "1264983250_DOMAIN_COM-VRSN",
+                            "Registry Expiry Date": "2020-10-09T18:20:50Z",
+                            "Tech Country": "US",
+                            "Tech Organization": "GitHub, Inc.",
+                            "Tech State/Province": "CA",
+                            "Updated Date": "2019-05-13T06:58:33-0700 | 2019-05-13T13:58:34Z"
+                        }
+                    },
+                    "id": "ce0b93299850a545dad697df58d29ebc062d18f303dc36d362d58d7da08fa88a",
+                    "links": {
+                        "self": "https://www.virustotal.com/api/v3/whois/ce0b93299850a545dad697df58d29ebc062d18f303dc36d362d58d7da08fa88a"
+                    },
+                    "type": "whois"
+                },
+                {
+                    "attributes": {
+                        "first_seen_date": 1567178787,
+                        "last_updated": 1557755914,
+                        "registrant_country": "US",
+                        "registrar_name": "MarkMonitor Inc. | MarkMonitor, Inc.",
+                        "whois_map": {
+                            "Admin Country": "US",
+                            "Admin Organization": "GitHub, Inc.",
+                            "Admin State/Province": "CA",
+                            "Creation Date": "2007-10-09T11:20:50-0700 | 2007-10-09T18:20:50Z",
+                            "DNSSEC": "unsigned",
+                            "Domain Name": "GITHUB.COM | github.com",
+                            "Domain Status": "clientDeleteProhibited (https://www.icann.org/epp#clientDeleteProhibited) | clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited | clientTransferProhibited (https://www.icann.org/epp#clientTransferProhibited) | clientTransferProhibited https://icann.org/epp#clientTransferProhibited | clientUpdateProhibited (https://www.icann.org/epp#clientUpdateProhibited) | clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited",
+                            "Name Server": "NS-1283.AWSDNS-32.ORG | NS-1707.AWSDNS-21.CO.UK | NS-421.AWSDNS-52.COM | NS-520.AWSDNS-01.NET | NS1.P16.DYNECT.NET | NS2.P16.DYNECT.NET | NS3.P16.DYNECT.NET | NS4.P16.DYNECT.NET | ns-1283.awsdns-32.org | ns-1707.awsdns-21.co.uk | ns-421.awsdns-52.com | ns-520.awsdns-01.net | ns1.p16.dynect.net | ns2.p16.dynect.net | ns3.p16.dynect.net | ns4.p16.dynect.net",
+                            "Registrant Country": "US",
+                            "Registrant Organization": "e9cfc3ab0c85f792",
+                            "Registrant State/Province": "b1952dfc047df18a",
+                            "Registrar": "MarkMonitor Inc. | MarkMonitor, Inc.",
+                            "Registrar Abuse Contact Email": "abusecomplaints@markmonitor.com",
+                            "Registrar Abuse Contact Phone": "+1.2083895740",
+                            "Registrar IANA ID": "292",
+                            "Registrar Registration Expiration Date": "2020-10-09T11:20:50-0700",
+                            "Registrar URL": "http://www.markmonitor.com",
+                            "Registrar WHOIS Server": "whois.markmonitor.com",
+                            "Registry Domain ID": "1264983250_DOMAIN_COM-VRSN",
+                            "Registry Expiry Date": "2020-10-09T18:20:50Z",
+                            "Tech Country": "US",
+                            "Tech Organization": "GitHub, Inc.",
+                            "Tech State/Province": "CA",
+                            "Updated Date": "2019-05-13T06:58:33-0700 | 2019-05-13T13:58:34Z"
+                        }
+                    },
+                    "id": "5e4dbec311f1ad3e79ad1c8fa964db4aebf5b9f7940dd48650bed52df6ca0775",
+                    "links": {
+                        "self": "https://www.virustotal.com/api/v3/whois/5e4dbec311f1ad3e79ad1c8fa964db4aebf5b9f7940dd48650bed52df6ca0775"
+                    },
+                    "type": "whois"
+                }
+            ],
+            "links": {
+                "self": "https://www.virustotal.com/api/v3/domains/github.com/historical_whois?limit=10"
+            }
+        }
+    http_version: 
+  recorded_at: Sat, 19 Oct 2019 22:36:15 GMT
+recorded_with: VCR 5.0.0

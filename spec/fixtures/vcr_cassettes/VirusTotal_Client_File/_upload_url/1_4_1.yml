@@ -1,37 +1,45 @@
 ---
 http_interactions:
-  - request:
-      method: get
-      uri: https://www.virustotal.com/api/v3/files/upload_url
-      body:
-        encoding: US-ASCII
-        string: ""
-      headers:
-        X-Apikey:
-          - "<VIRUSTOTAL_API_KEY>"
-    response:
-      status:
-        code: 200
-        message: OK
-      headers:
-        Cache-Control:
-          - no-cache
-        Content-Type:
-          - application/json; charset=utf-8
-        X-Cloud-Trace-Context:
-          - 49a07aaf5101bb86493e23a741777bac
-        Date:
-          - Thu, 26 Sep 2019 08:10:45 GMT
-        Server:
-          - Google Frontend
-        Content-Length:
-          - "1096"
-      body:
-        encoding: UTF-8
-        string: |-
-          {
-              "data": "https://www.virustotal.com/foo_bar/"
-          }
-      http_version:
-    recorded_at: Thu, 26 Sep 2019 08:10:45 GMT
-recorded_with: VCR 4.0.0
+- request:
+    method: get
+    uri: https://www.virustotal.com/api/v3/files/upload_url
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - www.virustotal.com
+      X-Apikey:
+      - "<VIRUSTOTAL_API_KEY>"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Cloud-Trace-Context:
+      - b2518954cfbb6b96afdeed58d67c1177
+      Date:
+      - Sat, 19 Oct 2019 22:43:42 GMT
+      Server:
+      - Google Frontend
+      Content-Length:
+      - '1117'
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+            "data": "https://www.virustotal.com/_ah/upload/AMmfu6YF6tzbfGokbcShwHe0HJzS65snDQp1Fr2alFPZubVK7XdaDl6PdHxsJbKI6TlQKUbOYJhiYjsPahzdRYwEkkDt7GTEYbwyBHmu0r696BBwboTYAAmWyArF0XWz96n0BYnD-emwSUyaEABfcl-jAnMffeHzzYC8OGzEaqI-i313cS9Ta9xABkuqGX_zfKP_S1ii6t2uC19uyv0RsY_TaACNaNxWuS0WXF3pjwWE-_XQVD6nki9nO2NInWhhIktvsystRwWCwci61prTAduFo3_UAestOA96u-Y_nwtGDjbfg60toObc5P7xSH-D_KI5qlME62BEf8EyseJxwbPUEKCmC0iyLEgaNln0w9EHSxOY9bhpyb1UEfLVQCcbE4VG12wgQGNG7CyVYrG6RTvyna8-Ni82OusNjdnvynKDipVzhMcxxk0Daiy9_BGVj-5hR_iNYLbOgLPnJzdDgD_ruII7gTMHh-2b7yjfQWxyrem7TYDdBDvebuZc37-FqkLcPNIlaE0J0TTnAsdPqA64hzdyCuiYkqrI-ZbN1HUzPZM9ASXFSqut4ESuGUKSplncX3yJDO86ose77bUcxL57aIMS9u-47V5bKaiw-rOVGkBHvJt6CVyiPiyYx7_iClSXi8zS_Ph4WYmhSuVcevRqO0Dgm7C7cF3kIHNmuq5Bb5uf_-WHK5-66tjXdARXLyzb01DHZSwMcE1IvmM5XK1QRhngE1R0Ccs1Zcmvv9ECaQoE-S3PJ277i0Nh1VHpBDWbPn4ppKiyAe2yRWc901yJZNEUuKgkxX8YtVHj_HBt_HehVTsuEEXeEbmRnXl9fbZKGgF0Dafyl7FrfK4sWwFnOQSRCOHg7zBrMxkYUYEjfFkoocphW0O2t931zi3FCn6t0tnx4ZP8ZWTGi_1NrrxLrzQFwAU9ketjD3V-gcYWQj35lVoca2XpCgHvaSiaJbAm9BDsa1vysVr21CVVDcAA4742FSj6Ntow9USZ0Boi9LPdBeIR9sY/ALBNUaYAAAAAXauT9s305QrXkJkzvmbaO4P_Uu1PTo8V/"
+        }
+    http_version: 
+  recorded_at: Sat, 19 Oct 2019 22:43:42 GMT
+recorded_with: VCR 5.0.0

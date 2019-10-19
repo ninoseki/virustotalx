@@ -4,6 +4,7 @@ module VirusTotal
   module Client
     class Graph < Base
       include Action::Get
+      include Action::Relationships
 
       #
       # Return graphs.

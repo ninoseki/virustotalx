@@ -7,6 +7,14 @@ http_interactions:
       encoding: US-ASCII
       string: ''
     headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - www.virustotal.com
       X-Apikey:
       - "<VIRUSTOTAL_API_KEY>"
   response:
@@ -19,13 +27,13 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       X-Cloud-Trace-Context:
-      - d66459a0650195aff5c26ea61a6c8325
+      - 7a27e0ebcddcdb2156dbe90b4c402612
       Date:
-      - Thu, 26 Sep 2019 07:57:24 GMT
+      - Sat, 19 Oct 2019 22:57:59 GMT
       Server:
       - Google Frontend
       Content-Length:
-      - '7914'
+      - '7981'
     body:
       encoding: UTF-8
       string: |-
@@ -40,9 +48,25 @@ http_interactions:
                     "creation_date": 808372800,
                     "last_dns_records": [
                         {
-                            "ttl": 14927,
-                            "type": "A",
-                            "value": "93.184.216.34"
+                            "ttl": 21599,
+                            "type": "TXT",
+                            "value": "v=spf1 -all"
+                        },
+                        {
+                            "priority": 0,
+                            "ttl": 9457,
+                            "type": "MX",
+                            "value": ""
+                        },
+                        {
+                            "ttl": 16841,
+                            "type": "NS",
+                            "value": "a.iana-servers.net"
+                        },
+                        {
+                            "ttl": 16841,
+                            "type": "NS",
+                            "value": "b.iana-servers.net"
                         },
                         {
                             "expire": 1209600,
@@ -50,39 +74,23 @@ http_interactions:
                             "refresh": 7200,
                             "retry": 3600,
                             "rname": "noc.dns.icann.org",
-                            "serial": 2019090512,
-                            "ttl": 1280,
+                            "serial": 2019101503,
+                            "ttl": 3346,
                             "type": "SOA",
-                            "value": "sns.dns.icann.org"
+                            "value": "ns.icann.org"
                         },
                         {
-                            "ttl": 14732,
-                            "type": "TXT",
-                            "value": "v=spf1 -all"
-                        },
-                        {
-                            "ttl": 14141,
+                            "ttl": 3642,
                             "type": "AAAA",
                             "value": "2606:2800:220:1:248:1893:25c8:1946"
                         },
                         {
-                            "ttl": 12103,
-                            "type": "NS",
-                            "value": "a.iana-servers.net"
-                        },
-                        {
-                            "ttl": 12103,
-                            "type": "NS",
-                            "value": "b.iana-servers.net"
-                        },
-                        {
-                            "priority": 0,
-                            "ttl": 12288,
-                            "type": "MX",
-                            "value": ""
+                            "ttl": 12242,
+                            "type": "A",
+                            "value": "93.184.216.34"
                         }
                     ],
-                    "last_dns_records_date": 1569481432,
+                    "last_dns_records_date": 1571480519,
                     "last_https_certificate": {
                         "cert_signature": {
                             "signature": "737085ef4041a76a43d5789c7b5548e6bc6b9986bafb0d038b78fe11f029a00ccd69140bc60478b2cef087d5019dc4597a71fef06e9ec1a0b0912d1fea3d55c533050ccdc13518b06a68664cbf5621da5bd948b98c3521915ddc75d77a462c2227a66fd33a17ebbebd13c5122673c05da335896afb27d4ddaa74742e37e5013ba6d030b083d0a1c4752185b2e5fa670030a2bc53834dbfd6a883bbbcd6ed1cb31ef1580382008e9cef90f21a5fa2a306da5dbe9fda5da6e62fde588018d3f1627ba6a39faea86972638165ae8283a3b5978a9b2051ff1a3f61401e48d06b38f9e1fa17d8774a88e63d36244fef0ab99f70f38327f8cf2a057510a18a0a8088cd",
@@ -159,30 +167,32 @@ http_interactions:
                         },
                         "version": "V3"
                     },
-                    "last_https_certificate_date": 1569481432,
+                    "last_https_certificate_date": 1571480519,
+                    "last_modification_date": 1571525814,
                     "last_update_date": 1565766281,
                     "popularity_ranks": {
                         "Alexa": {
-                            "rank": 16545,
-                            "timestamp": 1569425762
+                            "rank": 13184,
+                            "timestamp": 1571499361
                         },
                         "Cisco Umbrella": {
-                            "rank": 6646,
-                            "timestamp": 1569425761
+                            "rank": 7123,
+                            "timestamp": 1571412961
                         },
                         "Majestic": {
-                            "rank": 294,
-                            "timestamp": 1569425762
+                            "rank": 286,
+                            "timestamp": 1571499362
                         }
                     },
                     "registrar": "RESERVED-Internet Assigned Numbers Authority",
                     "reputation": 0,
+                    "tags": [],
                     "total_votes": {
                         "harmless": 0,
                         "malicious": 0
                     },
                     "whois": "Creation Date: 1995-08-14T04:00:00Z\nDNSSEC: signedDelegation\nDomain Name: EXAMPLE.COM\nDomain Status: clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited\nDomain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited\nDomain Status: clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited\nName Server: A.IANA-SERVERS.NET\nName Server: B.IANA-SERVERS.NET\nRegistrar IANA ID: 376\nRegistrar URL: http://res-dom.iana.org\nRegistrar WHOIS Server: whois.iana.org\nRegistrar: RESERVED-Internet Assigned Numbers Authority\nRegistry Domain ID: 2336799_DOMAIN_COM-VRSN\nRegistry Expiry Date: 2020-08-13T04:00:00Z\nUpdated Date: 2019-08-14T07:04:41Z\ncreated: 1992-01-01\ndomain: EXAMPLE.COM\norganisation: Internet Assigned Numbers Authority\nsource: IANA",
-                    "whois_date": 1567592397
+                    "whois_date": 1570233370
                 },
                 "id": "example.com",
                 "links": {
@@ -195,5 +205,5 @@ http_interactions:
             }
         }
     http_version: 
-  recorded_at: Thu, 26 Sep 2019 07:57:24 GMT
-recorded_with: VCR 4.0.0
+  recorded_at: Sat, 19 Oct 2019 22:57:59 GMT
+recorded_with: VCR 5.0.0

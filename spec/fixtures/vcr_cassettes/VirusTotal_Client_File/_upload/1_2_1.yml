@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://www.virustotal.com/api/v3/files
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - www.virustotal.com
+      Content-Type:
+      - multipart/form-data
+      X-Apikey:
+      - "<VIRUSTOTAL_API_KEY>"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Cloud-Trace-Context:
+      - db64f19729ffdcccd46db9b11c8fbb61
+      Date:
+      - Sat, 19 Oct 2019 22:43:41 GMT
+      Server:
+      - Google Frontend
+      Content-Length:
+      - '128'
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+            "data": {
+                "id": "YmE0ZTM0ZGQ0YmRlNjdiMjIxMzYyZDU0YzRiYWYwNzA6MTU3MTUyNDc2OA==",
+                "type": "analysis"
+            }
+        }
+    http_version: 
+  recorded_at: Sat, 19 Oct 2019 22:43:41 GMT
+recorded_with: VCR 5.0.0
