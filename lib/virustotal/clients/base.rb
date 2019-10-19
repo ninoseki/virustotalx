@@ -15,6 +15,7 @@ module VirusTotal
         analysis: "analyses",
         domain: "domains",
         file: "files",
+        graph: "graphs",
         ipaddress: "ip_addresses",
         url: "urls",
       }.freeze
@@ -118,6 +119,20 @@ module VirusTotal
         post.set_form(data, "multipart/form-data")
 
         request(post, &block)
+      end
+
+      def _patch(path, params = {}, &block)
+        patch = Net::HTTP::Patch.new(url_for(path))
+        patch.body = JSON.generate(params) if params
+
+        request(patch, &block)
+      end
+
+      def _delete(path, params = {}, &block)
+        delete = Net::HTTP::Delete.new(url_for(path))
+        delete.body = JSON.generate(params) if params
+
+        request(delete, &block)
       end
 
       def to_id(id)
