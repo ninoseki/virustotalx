@@ -5,21 +5,58 @@ require "base64"
 module VirusTotal
   module Client
     class URL < Object
+      #
+      # Analyse an URL.
+      #
+      # @see https://developers.virustotal.com/v3.0/reference#urls-analyse
+      #
+      # @param [String] url URL identifier
+      #
+      # @return [Hash]
+      #
       def analyse(url)
         id = to_id(url)
         _post("/urls/#{id}/analyse") { |json| json }
       end
 
+      #
+      # Retrieve votes for a URL
+      #
+      # @see https://developers.virustotal.com/v3.0/reference#urls-votes-get
+      #
+      # @param [String] url URL identifier
+      #
+      # @return [Hash]
+      #
       def votes(url)
         id = to_id(url)
         _get("/urls/#{id}/votes") { |json| json }
       end
 
+      #
+      # Domain or IP address for a URL.
+      #
+      # @see https://developers.virustotal.com/v3.0/reference#urlsidnetwork_location
+      #
+      # @param [String] url URL identifier
+      #
+      # @return [Hash]
+      #
       def network_location(url)
         id = to_id(url)
         _get("/urls/#{id}/network_location") { |json| json }
       end
 
+      #
+      # Add a vote for a URL
+      #
+      # @see https://developers.virustotal.com/v3.0/reference#urls-votes-post
+      #
+      # @param [String] url URL identifier
+      # @param [String] verdict harmless or malicious
+      #
+      # @return [Hash]
+      #
       def add_vote(url, verdict)
         id = to_id(url)
         params = {
