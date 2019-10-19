@@ -1,0 +1,62 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.virustotal.com/api/v3/graphs/g7bca5023c497475bbc737e8c29f32a0c3d7b9c5eb8af43bab7b59dd1f6f17e79/owner
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - www.virustotal.com
+      X-Apikey:
+      - "<VIRUSTOTAL_API_KEY>"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Cloud-Trace-Context:
+      - f39ad3daa689be56d19d00d6254240e9
+      Date:
+      - Sat, 19 Oct 2019 22:51:03 GMT
+      Server:
+      - Google Frontend
+      Content-Length:
+      - '591'
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+            "data": {
+                "attributes": {
+                    "first_name": "sreenivasarao",
+                    "last_name": "pamulapati",
+                    "profile_phrase": "None",
+                    "reputation": 1,
+                    "status": "active",
+                    "user_since": 1478153413
+                },
+                "id": "sreenivasaraop",
+                "links": {
+                    "self": "https://www.virustotal.com/api/v3/users/sreenivasaraop"
+                },
+                "type": "user"
+            },
+            "links": {
+                "self": "https://www.virustotal.com/api/v3/graphs/g7bca5023c497475bbc737e8c29f32a0c3d7b9c5eb8af43bab7b59dd1f6f17e79/owner"
+            }
+        }
+    http_version: 
+  recorded_at: Sat, 19 Oct 2019 22:51:03 GMT
+recorded_with: VCR 5.0.0

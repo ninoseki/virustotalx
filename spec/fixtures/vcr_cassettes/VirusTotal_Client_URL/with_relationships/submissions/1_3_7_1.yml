@@ -1,0 +1,153 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.virustotal.com/api/v3/urls/aHR0cDovL2V4YW1wbGUuY29tLw/submissions
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - www.virustotal.com
+      X-Apikey:
+      - "<VIRUSTOTAL_API_KEY>"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Cloud-Trace-Context:
+      - 5b34202d668ef737dd0099c9be1f4ecb
+      Date:
+      - Sat, 19 Oct 2019 22:36:39 GMT
+      Server:
+      - Google Frontend
+      Content-Length:
+      - '5173'
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+            "data": [
+                {
+                    "attributes": {
+                        "date": 1571521055
+                    },
+                    "id": "u-2a1b402420ef46577471cdc7409b0fa2c6a204db316e59ade2d805435489a067-1571521055",
+                    "links": {
+                        "self": "https://www.virustotal.com/api/v3/submissions/u-2a1b402420ef46577471cdc7409b0fa2c6a204db316e59ade2d805435489a067-1571521055"
+                    },
+                    "type": "submission"
+                },
+                {
+                    "attributes": {
+                        "date": 1571519100
+                    },
+                    "id": "u-2a1b402420ef46577471cdc7409b0fa2c6a204db316e59ade2d805435489a067-1571519100",
+                    "links": {
+                        "self": "https://www.virustotal.com/api/v3/submissions/u-2a1b402420ef46577471cdc7409b0fa2c6a204db316e59ade2d805435489a067-1571519100"
+                    },
+                    "type": "submission"
+                },
+                {
+                    "attributes": {
+                        "date": 1571515200
+                    },
+                    "id": "u-2a1b402420ef46577471cdc7409b0fa2c6a204db316e59ade2d805435489a067-1571515200",
+                    "links": {
+                        "self": "https://www.virustotal.com/api/v3/submissions/u-2a1b402420ef46577471cdc7409b0fa2c6a204db316e59ade2d805435489a067-1571515200"
+                    },
+                    "type": "submission"
+                },
+                {
+                    "attributes": {
+                        "date": 1571512140
+                    },
+                    "id": "u-2a1b402420ef46577471cdc7409b0fa2c6a204db316e59ade2d805435489a067-1571512140",
+                    "links": {
+                        "self": "https://www.virustotal.com/api/v3/submissions/u-2a1b402420ef46577471cdc7409b0fa2c6a204db316e59ade2d805435489a067-1571512140"
+                    },
+                    "type": "submission"
+                },
+                {
+                    "attributes": {
+                        "date": 1571508480
+                    },
+                    "id": "u-2a1b402420ef46577471cdc7409b0fa2c6a204db316e59ade2d805435489a067-1571508480",
+                    "links": {
+                        "self": "https://www.virustotal.com/api/v3/submissions/u-2a1b402420ef46577471cdc7409b0fa2c6a204db316e59ade2d805435489a067-1571508480"
+                    },
+                    "type": "submission"
+                },
+                {
+                    "attributes": {
+                        "date": 1571499459
+                    },
+                    "id": "u-2a1b402420ef46577471cdc7409b0fa2c6a204db316e59ade2d805435489a067-1571499459",
+                    "links": {
+                        "self": "https://www.virustotal.com/api/v3/submissions/u-2a1b402420ef46577471cdc7409b0fa2c6a204db316e59ade2d805435489a067-1571499459"
+                    },
+                    "type": "submission"
+                },
+                {
+                    "attributes": {
+                        "date": 1571497560
+                    },
+                    "id": "u-2a1b402420ef46577471cdc7409b0fa2c6a204db316e59ade2d805435489a067-1571497560",
+                    "links": {
+                        "self": "https://www.virustotal.com/api/v3/submissions/u-2a1b402420ef46577471cdc7409b0fa2c6a204db316e59ade2d805435489a067-1571497560"
+                    },
+                    "type": "submission"
+                },
+                {
+                    "attributes": {
+                        "date": 1571493605
+                    },
+                    "id": "u-2a1b402420ef46577471cdc7409b0fa2c6a204db316e59ade2d805435489a067-1571493605",
+                    "links": {
+                        "self": "https://www.virustotal.com/api/v3/submissions/u-2a1b402420ef46577471cdc7409b0fa2c6a204db316e59ade2d805435489a067-1571493605"
+                    },
+                    "type": "submission"
+                },
+                {
+                    "attributes": {
+                        "date": 1571490480
+                    },
+                    "id": "u-2a1b402420ef46577471cdc7409b0fa2c6a204db316e59ade2d805435489a067-1571490480",
+                    "links": {
+                        "self": "https://www.virustotal.com/api/v3/submissions/u-2a1b402420ef46577471cdc7409b0fa2c6a204db316e59ade2d805435489a067-1571490480"
+                    },
+                    "type": "submission"
+                },
+                {
+                    "attributes": {
+                        "date": 1571482980
+                    },
+                    "id": "u-2a1b402420ef46577471cdc7409b0fa2c6a204db316e59ade2d805435489a067-1571482980",
+                    "links": {
+                        "self": "https://www.virustotal.com/api/v3/submissions/u-2a1b402420ef46577471cdc7409b0fa2c6a204db316e59ade2d805435489a067-1571482980"
+                    },
+                    "type": "submission"
+                }
+            ],
+            "links": {
+                "next": "https://www.virustotal.com/api/v3/urls/2a1b402420ef46577471cdc7409b0fa2c6a204db316e59ade2d805435489a067/submissions?cursor=Ct0BChEKBGRhdGUSCQiAwqymlqjlAhLDAWoRc352aXJ1c3RvdGFsY2xvdWRyrQELEgNVUkwiQDJhMWI0MDI0MjBlZjQ2NTc3NDcxY2RjNzQwOWIwZmEyYzZhMjA0ZGIzMTZlNTlhZGUyZDgwNTQzNTQ4OWEwNjcMCxIKU3VibWlzc2lvbiJUMmExYjQwMjQyMGVmNDY1Nzc0NzFjZGM3NDA5YjBmYTJjNmEyMDRkYjMxNmU1OWFkZTJkODA1NDM1NDg5YTA2Ny0yMDE5LTEwLTE5VDExOjAzOjAwDBgAIAE%3D&limit=10",
+                "self": "https://www.virustotal.com/api/v3/urls/2a1b402420ef46577471cdc7409b0fa2c6a204db316e59ade2d805435489a067/submissions?limit=10"
+            },
+            "meta": {
+                "cursor": "Ct0BChEKBGRhdGUSCQiAwqymlqjlAhLDAWoRc352aXJ1c3RvdGFsY2xvdWRyrQELEgNVUkwiQDJhMWI0MDI0MjBlZjQ2NTc3NDcxY2RjNzQwOWIwZmEyYzZhMjA0ZGIzMTZlNTlhZGUyZDgwNTQzNTQ4OWEwNjcMCxIKU3VibWlzc2lvbiJUMmExYjQwMjQyMGVmNDY1Nzc0NzFjZGM3NDA5YjBmYTJjNmEyMDRkYjMxNmU1OWFkZTJkODA1NDM1NDg5YTA2Ny0yMDE5LTEwLTE5VDExOjAzOjAwDBgAIAE="
+            }
+        }
+    http_version: 
+  recorded_at: Sat, 19 Oct 2019 22:36:39 GMT
+recorded_with: VCR 5.0.0

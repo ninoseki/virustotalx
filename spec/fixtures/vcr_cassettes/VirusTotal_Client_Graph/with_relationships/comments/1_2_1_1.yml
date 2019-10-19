@@ -1,0 +1,48 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.virustotal.com/api/v3/graphs/g7bca5023c497475bbc737e8c29f32a0c3d7b9c5eb8af43bab7b59dd1f6f17e79/comments
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - www.virustotal.com
+      X-Apikey:
+      - "<VIRUSTOTAL_API_KEY>"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Cloud-Trace-Context:
+      - ff29a1a9b1d1a14eedfac8f85ca14f67;o=1
+      Date:
+      - Sat, 19 Oct 2019 22:50:59 GMT
+      Server:
+      - Google Frontend
+      Content-Length:
+      - '183'
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+            "data": [],
+            "links": {
+                "self": "https://www.virustotal.com/api/v3/graphs/g7bca5023c497475bbc737e8c29f32a0c3d7b9c5eb8af43bab7b59dd1f6f17e79/comments?limit=10"
+            }
+        }
+    http_version: 
+  recorded_at: Sat, 19 Oct 2019 22:50:59 GMT
+recorded_with: VCR 5.0.0

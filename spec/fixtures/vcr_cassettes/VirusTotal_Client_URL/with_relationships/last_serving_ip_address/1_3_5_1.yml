@@ -1,0 +1,146 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.virustotal.com/api/v3/urls/aHR0cDovL2V4YW1wbGUuY29tLw/last_serving_ip_address
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - www.virustotal.com
+      X-Apikey:
+      - "<VIRUSTOTAL_API_KEY>"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Cloud-Trace-Context:
+      - ed669294daf6e74c4d6676c18592eb76;o=1
+      Date:
+      - Sat, 19 Oct 2019 22:36:37 GMT
+      Server:
+      - Google Frontend
+      Content-Length:
+      - '6965'
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+            "data": {
+                "attributes": {
+                    "as_owner": "MCI Communications Services, Inc. d/b/a Verizon Business",
+                    "asn": 15133,
+                    "continent": "NA",
+                    "country": "US",
+                    "last_https_certificate": {
+                        "cert_signature": {
+                            "signature": "737085ef4041a76a43d5789c7b5548e6bc6b9986bafb0d038b78fe11f029a00ccd69140bc60478b2cef087d5019dc4597a71fef06e9ec1a0b0912d1fea3d55c533050ccdc13518b06a68664cbf5621da5bd948b98c3521915ddc75d77a462c2227a66fd33a17ebbebd13c5122673c05da335896afb27d4ddaa74742e37e5013ba6d030b083d0a1c4752185b2e5fa670030a2bc53834dbfd6a883bbbcd6ed1cb31ef1580382008e9cef90f21a5fa2a306da5dbe9fda5da6e62fde588018d3f1627ba6a39faea86972638165ae8283a3b5978a9b2051ff1a3f61401e48d06b38f9e1fa17d8774a88e63d36244fef0ab99f70f38327f8cf2a057510a18a0a8088cd",
+                            "signature_algorithm": "sha256RSA"
+                        },
+                        "extensions": {
+                            "1.3.6.1.4.1.11129.2.4.2": "0482016b0169007700a4b90990b418581487bb13a2cc67700a3c359804f91bdf",
+                            "CA": true,
+                            "authority_key_identifier": {
+                                "keyid": "0f80611c823161d52f28e78d4638b42ce1c6d9e2"
+                            },
+                            "ca_information_access": {
+                                "CA Issuers": "http://cacerts.digicert.com/DigiCertSHA2SecureServerCA.crt",
+                                "OCSP": "http://ocsp.digicert.com"
+                            },
+                            "certificate_policies": [
+                                "2.16.840.1.114412.1.1",
+                                "2.23.140.1.2.2"
+                            ],
+                            "crl_distribution_points": [
+                                "http://crl3.digicert.com/ssca-sha2-g6.crl",
+                                "http://crl4.digicert.com/ssca-sha2-g6.crl"
+                            ],
+                            "extended_key_usage": [
+                                "serverAuth",
+                                "clientAuth"
+                            ],
+                            "key_usage": [
+                                "ff"
+                            ],
+                            "subject_alternative_name": [
+                                "www.example.org",
+                                "example.com",
+                                "example.edu",
+                                "example.net",
+                                "example.org",
+                                "www.example.com",
+                                "www.example.edu",
+                                "www.example.net"
+                            ],
+                            "subject_key_identifier": "66986202e00991a7d9e336fb76c6b0bfa16da7be",
+                            "tags": []
+                        },
+                        "issuer": {
+                            "C": "US",
+                            "CN": "DigiCert SHA2 Secure Server CA",
+                            "O": "DigiCert Inc"
+                        },
+                        "public_key": {
+                            "algorithm": "RSA",
+                            "rsa": {
+                                "exponent": "010001",
+                                "key_size": 2048,
+                                "modulus": "00d0f01274a0962072086519125a5d4ad03a8c668fa0292ba7dbd5ac0ccfa57192154215b00792763175d7278e4d506a75d17b535e27aaedeba4603af28e45186b45335c8511aa2012fe60ac9d4c458fddd30e3e770f09c2856534c722fb7413b9429ff721f6f09c44746dc9dfb31f8f60b77111069063419d8f347b244946acf2f08d0b48f4d3921af7a245eecce5d7837f2e82bd71dd281958336e11a13aa06a72609201599f63177a49427b9c3fdbd305e8cc877ef8aafc9dd10550ab75b11eba20cb89d46d6c3782284cc53f7cc110f5a0a5666b5353c9dbed85c36d05f864a7c90eeb8fe1c4b1eb2d680e153fe5e2dcfc21642dee692b0478db7765cb54f9"
+                            }
+                        },
+                        "serial_number": "fd078dd48f1a2bd4d0f2ba96b6038fe",
+                        "signature_algorithm": "sha256RSA",
+                        "size": 1860,
+                        "subject": {
+                            "C": "US",
+                            "CN": "www.example.org",
+                            "L": "Los Angeles",
+                            "O": "Internet Corporation for Assigned Names and Numbers",
+                            "OU": "Technology",
+                            "ST": "California"
+                        },
+                        "tags": [],
+                        "thumbprint": "7bb698386970363d2919cc5772846984ffd4a889",
+                        "thumbprint_sha256": "9250711c54de546f4370e0c3d3a3ec45bc96092a25a4a71a1afa396af7047eb8",
+                        "validity": {
+                            "not_after": "2020-12-02 12:00:00",
+                            "not_before": "2018-11-28 00:00:00"
+                        },
+                        "version": "V3"
+                    },
+                    "last_https_certificate_date": 1571489900,
+                    "network": "93.184.216.0/22",
+                    "regional_internet_registry": "ARIN",
+                    "reputation": 0,
+                    "total_votes": {
+                        "harmless": 0,
+                        "malicious": 0
+                    },
+                    "whois": "NetRange: 93.0.0.0 - 93.255.255.255\nCIDR: 93.0.0.0/8\nNetName: 93-RIPE\nNetHandle: NET-93-0-0-0-1\nParent: ()\nNetType: Allocated to RIPE NCC\nOriginAS: \nOrganization: RIPE Network Coordination Centre (RIPE)\nRegDate: 2007-03-26\nUpdated: 2009-05-18\nComment: These addresses have been further assigned to users in\nComment: the RIPE NCC region. Contact information can be found in\nComment: the RIPE database at http://www.ripe.net/whois\nRef: https://rdap.arin.net/registry/ip/93.0.0.0\nResourceLink: https://apps.db.ripe.net/search/query.html\nResourceLink: whois.ripe.net\nOrgName: RIPE Network Coordination Centre\nOrgId: RIPE\nAddress: P.O. Box 10096\nCity: Amsterdam\nStateProv: \nPostalCode: 1001EB\nCountry: NL\nRegDate: \nUpdated: 2013-07-29\nRef: https://rdap.arin.net/registry/entity/RIPE\nReferralServer: whois://whois.ripe.net\nResourceLink: https://apps.db.ripe.net/search/query.html\nOrgAbuseHandle: ABUSE3850-ARIN\nOrgAbuseName: Abuse Contact\nOrgAbusePhone: +31205354444 \nOrgAbuseEmail: abuse@ripe.net\nOrgAbuseRef: https://rdap.arin.net/registry/entity/ABUSE3850-ARIN\nOrgTechHandle: RNO29-ARIN\nOrgTechName: RIPE NCC Operations\nOrgTechPhone: +31 20 535 4444 \nOrgTechEmail: hostmaster@ripe.net\nOrgTechRef: https://rdap.arin.net/registry/entity/RNO29-ARIN\ninetnum: 93.184.216.0 - 93.184.216.255\nnetname: EDGECAST-NETBLK-03\ndescr: NETBLK-03-EU-93-184-216-0-24\ncountry: EU\nadmin-c: DS7892-RIPE\ntech-c: DS7892-RIPE\nstatus: ASSIGNED PA\nmnt-by: MNT-EDGECAST\ncreated: 2012-06-22T21:48:41Z\nlast-modified: 2012-06-22T21:48:41Z\nsource: RIPE # Filtered\nperson: Derrick Sawyer\naddress: 13031 W Jefferson Blvd #900, Los Angeles, CA 90094\nphone: +18773343236\nnic-hdl: DS7892-RIPE\ncreated: 2010-08-25T18:44:19Z\nlast-modified: 2017-03-03T09:06:18Z\nsource: RIPE\nmnt-by: MNT-EDGECAST\n",
+                    "whois_date": 1570626282
+                },
+                "id": "93.184.216.34",
+                "links": {
+                    "self": "https://www.virustotal.com/api/v3/ip_addresses/93.184.216.34"
+                },
+                "type": "ip_address"
+            },
+            "links": {
+                "self": "https://www.virustotal.com/api/v3/urls/2a1b402420ef46577471cdc7409b0fa2c6a204db316e59ade2d805435489a067/last_serving_ip_address"
+            }
+        }
+    http_version: 
+  recorded_at: Sat, 19 Oct 2019 22:36:37 GMT
+recorded_with: VCR 5.0.0
