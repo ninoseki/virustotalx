@@ -3,7 +3,7 @@
 module VirusTotal
   module Client
     class Analysis < Base
-      include HasGet
+      include Action::Get
     end
   end
 end

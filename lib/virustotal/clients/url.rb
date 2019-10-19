@@ -5,10 +5,10 @@ require "base64"
 module VirusTotal
   module Client
     class URL < Base
-      include HasComments
-      include HasGet
-      include HasRelationships
-      include HasVotes
+      include Action::Comments
+      include Action::Get
+      include Action::Relationships
+      include Action::Votes
 
       #
       # Analyse an URL.

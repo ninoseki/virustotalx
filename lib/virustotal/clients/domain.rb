@@ -3,9 +3,9 @@
 module VirusTotal
   module Client
     class Domain < Base
-      include HasComments
-      include HasGet
-      include HasRelationships
+      include Action::Comments
+      include Action::Get
+      include Action::Relationships
 
       private
 

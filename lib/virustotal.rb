@@ -8,10 +8,10 @@ require "virustotal/api"
 
 require "virustotal/clients/base"
 
-require "virustotal/clients/modules/has_comments"
-require "virustotal/clients/modules/has_get"
-require "virustotal/clients/modules/has_relationships"
-require "virustotal/clients/modules/has_votes"
+require "virustotal/clients/actions/comments"
+require "virustotal/clients/actions/get"
+require "virustotal/clients/actions/relationships"
+require "virustotal/clients/actions/votes"
 
 require "virustotal/clients/analysis"
 require "virustotal/clients/domain"
