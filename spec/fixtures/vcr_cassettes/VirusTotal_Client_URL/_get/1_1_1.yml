@@ -7,6 +7,14 @@ http_interactions:
       encoding: US-ASCII
       string: ''
     headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - www.virustotal.com
       X-Apikey:
       - "<VIRUSTOTAL_API_KEY>"
   response:
@@ -19,13 +27,13 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       X-Cloud-Trace-Context:
-      - 27d844466c8219d7e11b8a0452f74a15
+      - fb3688fd0056e703e5d947f8bffdaf80
       Date:
-      - Thu, 26 Sep 2019 07:50:58 GMT
+      - Sat, 19 Oct 2019 22:57:49 GMT
       Server:
       - Google Frontend
       Content-Length:
-      - '24439'
+      - '24408'
     body:
       encoding: UTF-8
       string: |-
@@ -39,7 +47,7 @@ http_interactions:
                             "width=device-width, initial-scale=1"
                         ]
                     },
-                    "last_analysis_date": 1569484202,
+                    "last_analysis_date": 1571525812,
                     "last_analysis_results": {
                         "ADMINUSLabs": {
                             "category": "harmless",
@@ -619,26 +627,25 @@ http_interactions:
                     },
                     "last_final_url": "http://example.com/",
                     "last_http_response_code": 200,
-                    "last_http_response_content_length": 1270,
-                    "last_http_response_content_sha256": "3587cb776ce0e4e8237f215800b7dffba0f25865cb84550e87ea8bbac838c423",
+                    "last_http_response_content_length": 1256,
+                    "last_http_response_content_sha256": "ea8fac7c65fb589b0d53560f5251f74f9e9b243478dcb6b3ea79b5e36449c8d9",
                     "last_http_response_headers": {
-                        "accept-ranges": "bytes",
                         "cache-control": "max-age=604800",
-                        "content-length": "1270",
+                        "content-length": "1256",
                         "content-type": "text/html; charset=UTF-8",
-                        "date": "Thu, 26 Sep 2019 07:50:03 GMT",
-                        "etag": "\"1541025663\"",
-                        "expires": "Thu, 03 Oct 2019 07:50:03 GMT",
-                        "last-modified": "Fri, 09 Aug 2013 23:54:35 GMT",
-                        "server": "ECS (ord/4C84)",
+                        "date": "Sat, 19 Oct 2019 22:56:52 GMT",
+                        "etag": "\"3147526947+ident+gzip\"",
+                        "expires": "Sat, 26 Oct 2019 22:56:52 GMT",
+                        "last-modified": "Thu, 17 Oct 2019 07:18:26 GMT",
+                        "server": "ECS (ord/4CDA)",
                         "vary": "Accept-Encoding",
                         "x-cache": "HIT"
                     },
-                    "last_modification_date": 1569484203,
-                    "last_submission_date": 1569484202,
+                    "last_modification_date": 1571525814,
+                    "last_submission_date": 1571525812,
                     "reputation": -58,
                     "tags": [],
-                    "times_submitted": 24263,
+                    "times_submitted": 24768,
                     "title": "Example Domain",
                     "total_votes": {
                         "harmless": 50,
@@ -655,5 +662,5 @@ http_interactions:
             }
         }
     http_version: 
-  recorded_at: Thu, 26 Sep 2019 07:50:58 GMT
-recorded_with: VCR 4.0.0
+  recorded_at: Sat, 19 Oct 2019 22:57:49 GMT
+recorded_with: VCR 5.0.0

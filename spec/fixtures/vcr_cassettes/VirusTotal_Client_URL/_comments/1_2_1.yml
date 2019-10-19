@@ -7,6 +7,14 @@ http_interactions:
       encoding: US-ASCII
       string: ''
     headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - www.virustotal.com
       X-Apikey:
       - "<VIRUSTOTAL_API_KEY>"
   response:
@@ -19,9 +27,9 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       X-Cloud-Trace-Context:
-      - 83738d594a0da6e29b79dc18d036bf87
+      - e200595e942d1eb3e2d06dc43166a1e5
       Date:
-      - Thu, 26 Sep 2019 07:51:43 GMT
+      - Sat, 19 Oct 2019 22:57:50 GMT
       Server:
       - Google Frontend
       Content-Length:
@@ -237,5 +245,5 @@ http_interactions:
             }
         }
     http_version: 
-  recorded_at: Thu, 26 Sep 2019 07:51:43 GMT
-recorded_with: VCR 4.0.0
+  recorded_at: Sat, 19 Oct 2019 22:57:50 GMT
+recorded_with: VCR 5.0.0
