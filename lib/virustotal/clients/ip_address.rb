@@ -2,7 +2,11 @@
 
 module VirusTotal
   module Client
-    class IPAddress < Object
+    class IPAddress < Base
+      include HasComments
+      include HasGet
+      include HasRelationships
+
       private
 
       def relationships
