@@ -119,7 +119,7 @@ module VirusTotal
       private
 
       def relationships
-        %w(
+        @relationships ||= %w(
           analyses
           behaviours
           bundled_files
