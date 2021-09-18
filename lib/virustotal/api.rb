@@ -69,5 +69,14 @@ module VirusTotal
     def graph
       @graph ||= Client::Graph.new(key: key)
     end
+
+    #
+    # Intelligence API endpoint client
+    #
+    # @return [VirusTotal::Client::Intelligence]
+    #
+    def intelligence
+      @intelligence ||= Client::Intelligence.new(key: key)
+    end
   end
 end
