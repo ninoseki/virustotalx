@@ -45,14 +45,14 @@ module VirusTotal
       end
 
       def relationships
-        @relationships ||= %w(
+        @relationships ||= %w[
           analyses
           downloaded_files
           graphs
           last_serving_ip_address
           redirecting_urls
           submissions
-        ).map(&:to_sym)
+        ].map(&:to_sym)
       end
     end
   end

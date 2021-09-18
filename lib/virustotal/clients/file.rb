@@ -89,7 +89,7 @@ module VirusTotal
       private
 
       def relationships
-        @relationships ||= %w(
+        @relationships ||= %w[
           analyses
           behaviours
           bundled_files
@@ -112,7 +112,7 @@ module VirusTotal
           submissions
           screenshots
           votes
-        ).map(&:to_sym)
+        ].map(&:to_sym)
       end
     end
   end

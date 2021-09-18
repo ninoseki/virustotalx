@@ -9,7 +9,7 @@ module VirusTotal
     class Base
       HOST = "www.virustotal.com"
       VERSION = "v3"
-      BASE_URL = "https://#{HOST}/api/#{VERSION}"
+      BASE_URL = "https://#{HOST}/api/#{VERSION}".freeze
 
       CONVERT_TABLE = {
         analysis: "analyses",
@@ -17,7 +17,7 @@ module VirusTotal
         file: "files",
         graph: "graphs",
         ipaddress: "ip_addresses",
-        url: "urls",
+        url: "urls"
       }.freeze
 
       attr_reader :key
@@ -38,7 +38,8 @@ module VirusTotal
       end
 
       def https_options
-        if proxy = ENV["HTTPS_PROXY"] || ENV["https_proxy"]
+        proxy = ENV["HTTPS_PROXY"] || ENV["https_proxy"]
+        if proxy
           uri = URI(proxy)
           {
             proxy_address: uri.hostname,
@@ -55,13 +56,13 @@ module VirusTotal
         code = code.to_s.to_sym
 
         table = {
-          "400": BadRequestError,
-          "401": AuthenticationRequiredError,
-          "403": ForbiddenError,
-          "404": NotFoundError,
-          "409": AlreadyExistsError,
-          "429": QuotaExceededError,
-          "503": TransientError,
+          '400': BadRequestError,
+          '401': AuthenticationRequiredError,
+          '403': ForbiddenError,
+          '404': NotFoundError,
+          '409': AlreadyExistsError,
+          '429': QuotaExceededError,
+          '503': TransientError
         }
         raise Error, "Unsupported response code returned: #{code} - #{message}" unless table.key?(code)
 
@@ -78,7 +79,7 @@ module VirusTotal
           code = response.code.to_i
           body = response.body
           json = JSON.parse(body) if response["Content-Type"].to_s.include?("application/json")
-          message = json ? json.dig("message") : body
+          message = json ? json["message"] : body
 
           case code
           when 200
@@ -114,7 +115,7 @@ module VirusTotal
         post = Net::HTTP::Post.new(url_for(path))
 
         data = [
-          ["file", file, { "filename": filename }],
+          ["file", file, { filename: filename }]
         ]
         post.set_form(data, "multipart/form-data")
 
