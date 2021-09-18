@@ -182,14 +182,14 @@ module VirusTotal
       private
 
       def relationships
-        @relationships ||= %w(
+        @relationships ||= %w[
           comments
           items
           viewers
           editors
           owner
           group
-        ).map(&:to_sym)
+        ].map(&:to_sym)
       end
     end
   end
