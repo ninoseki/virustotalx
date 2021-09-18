@@ -25,9 +25,9 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_development_dependency "bundler", "~> 2.2"
-  spec.add_development_dependency "coveralls", "~> 0.8"
+  spec.add_development_dependency "coveralls_reborn", "~> 0.23"
   spec.add_development_dependency "rake", "~> 13.0"
   spec.add_development_dependency "rspec", "~> 3.10"
   spec.add_development_dependency "vcr", "~> 6.0"
-  spec.add_development_dependency "webmock", "~> 3.12"
+  spec.add_development_dependency "webmock", "~> 3.14"
 end
