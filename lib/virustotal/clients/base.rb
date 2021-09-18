@@ -9,13 +9,14 @@ module VirusTotal
     class Base
       HOST = "www.virustotal.com"
       VERSION = "v3"
-      BASE_URL = "https://#{HOST}/api/#{VERSION}".freeze
+      BASE_URL = "https://#{HOST}/api/#{VERSION}"
 
       CONVERT_TABLE = {
         analysis: "analyses",
         domain: "domains",
         file: "files",
         graph: "graphs",
+        intelligence: "intelligence",
         ipaddress: "ip_addresses",
         url: "urls"
       }.freeze

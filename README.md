@@ -117,6 +117,12 @@ Note: you can use a URL as an id.
 | DELETE      | graphs/{id}/relationships/editors/{user_or_group_id} | api.graph.delete_editor(id, user_or_group_id)                                       |
 | GET         | graphs/{id}/relationships/{relationship}             | api.graph.`relationship`(id)                                                        |
 
+## Intelligence
+
+| HTTP Method | URL                 | API method                                                                                 |
+|-------------|---------------------|--------------------------------------------------------------------------------------------|
+| GET         | intelligence/search | api.intelligence.search(query, order: nil, limit: nil, cursor: nil, descriptors_only: nil) |
+
 ## License
 
 The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).

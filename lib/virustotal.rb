@@ -17,8 +17,8 @@ require "virustotal/clients/analysis"
 require "virustotal/clients/domain"
 require "virustotal/clients/file"
 require "virustotal/clients/graph"
+require "virustotal/clients/intelligence"
 require "virustotal/clients/ip_address"
 require "virustotal/clients/url"
 
-module VirusTotal
-end
+module VirusTotal; end
